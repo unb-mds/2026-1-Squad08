@@ -1,3 +1,0 @@
-# Git e Github
-
-Resumo
