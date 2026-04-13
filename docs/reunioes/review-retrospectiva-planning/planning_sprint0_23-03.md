@@ -1,4 +1,5 @@
 # 23/03
+# Sprint 0
 # Escolhemos a área de atuação de cada integrante e definimos as primeiras issues:
 - Requisitos de Software: Caio  
 - Arquitetura de Software: Renan  
