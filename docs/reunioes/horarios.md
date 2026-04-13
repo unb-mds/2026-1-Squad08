@@ -8,8 +8,7 @@ Time-box: 1 hora.
 
 # Daily Scrum:
 
-Devido à dificuldade em todos se reunirem no mesmo horário, online ou presencialmente, iremos fazer por texto.
-
+Terça e quinta será uma reunião rápida, com Time-Box: 10 min, e sábado, apenas revisão com texto, pra checar o andamento de tudo.
 3 vezes na semana: terça (8h da noite), quinta (8h da noite) e sábado.
 
 # Sprint Review e Sprint Retrospective:
