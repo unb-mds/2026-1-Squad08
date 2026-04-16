@@ -1,5 +1,5 @@
 # Documentação das Dailies
-Na primeira semana após a definição do Scrum Master, decidimos testar fazer as dailies diariamente, mas por mensagem, para ver se conseguiriamos monitorar o andamento sem ter que nos reunir diretamente.
+Na primeira semana após a definição do Scrum Master(Sprint 1), decidimos testar fazer as dailies diariamente, mas por mensagem, para ver se conseguiriamos monitorar o andamento sem ter que nos reunir diretamente (fizemos assim durante a Sprint 2).
 
 Vendo que, apesar de ajudar a saber o que cada um está fazendo, não contribui em anda no andamento das Issues, e muitas vezes os integrantes simplesmente se esquecem de fazê-la.
 
@@ -163,7 +163,8 @@ Problema encontrado: nenhum
 
 O que fiz ontem: Estava realizando uma mudança em casa e não pude fazer nada
 
-O que farei hoje:terminar a issue, implementando os outros requisitos
+O que farei hoje:terminar a issue, 
+implementando os outros requisitos
 
 Problema encontrado: nenhum
 
@@ -192,3 +193,9 @@ O que fiz ontem: terminei de construir os Backlogs no Jira e Montei uma estraté
 O que farei hoje: Procurar mais alguns User Storys para deixar o backlog mais completo e ajeitar o Figma
 
 Problema encontrado: nenhum.
+
+# Terça-feira 04/04
+
+Ningúem encontrou nenhum problema até o momento.
+Maioria ainda não começou a resolver suas Issues, mas já tinhamos previsto isso na Sprint Planning.
+Presentes: Arthur, Caio, Ítalo, Luis e Renan. Pedro ausente.

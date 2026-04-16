@@ -1,0 +1,65 @@
+# 23/03
+# Sprint 0
+# Escolhemos a área de atuação de cada integrante e definimos as primeiras issues:
+- Requisitos de Software: Caio  
+- Arquitetura de Software: Renan  
+- Tecnologias Front: Pedro  
+- Tecnologias Back: Italo  
+- Git/GitHub: Arthur  
+- Metodologias Ágeis: Luis  
+
+>Cada um ficou responsável por estudar sua própria competência.
+
+# Definimos um horário de reunião semanal:
+Reunião depois da aula de Segunda, e, caso não haja tempo, terça-feira, às 8 da noite, remotamente.
+
+# Repassamos a Aula:
+Criamos as primeiras Issues  
+Criamos nosso próprio Figma através do Template disponibilizado  
+Cheat Sheet, POC, MVP, Framework, anotações…  
+
+---
+
+# 30/03
+# Sprint Planning da Sprint 1
+Decidimos que todos deveriam criar uma Issue para aprofundar nos temas, já partindo pra qual seria
+a decisão ideal de seu tópico visando o nosso projeto.  
+Também criamos uma Issue de Brainstorming, para pensarmos melhor no conceito geral do projeto.  
+Decidimos já criar o GitHub Project, para organizarmos melhor tudo.
+
+---
+
+# 06/04
+# Sprint Planning da Sprint 2
+## Urgente:
+- Definir a ideia principal do projeto hoje: todos integrantes pensarem em alguma ideia e mostrá-las na reunião da noite.
+
+## Issues:
+- A Issue de Brainstorming foi realocada para a Sprint 2 (essa semana), com intuito de ser finalizada no dia da Sprint Planning.
+- A Aplicação de Requisitos foi realocada para a Sprint 2, e o Renan também foi designado para ajudar a cumprí-la.
+- O Pedro precisa subir sua conclusão da Estudar Tecnologias Front-End, e deve criar uma Issue para filtrar as melhores tecnologias para usarmos no nosso projeto.
+- Deverá ser criado uma Issue para avaliar a possibilidade de implementação de um Chat Bot de IA no projeto, e Ítalo  será alocado, pois é o responsável pelo Back-End.
+- Iremos criar uma pasta no Repositório para subirmos todos documentos referente aos Estudos que fizemos e faremos, e, assim, não ficar apenas nos comentários das Issues.
+- Scrum Master terá uma Issue para analisar a agenda de cada um do grupo, e definir horários fixos de reuniões.
+
+##Projeção:
+- Projetamos que, em no máximo 2 semanas, já deveremos estar com a ideia madura e começando a implementar o que planejamos.
+
+---
+
+# 13/04
+# Sprint Planning da Sprint 3
+
+Issue 1: fazer diagrama de Arquitetura, junto com decisão de tecnologias e frameworks - Renan
+
+Issue 2: Identidade Visual - Caio
+
+Issue 3: Definir Front-End, vendo a integração Front-Flask (estudo) - Arthur e Pedro
+
+issue 4: Aprofundar Back-End - Ítalo
+
+Issue 5: testando API’s - Luis
+
+Issue 6: commitar as Dailys já feitas Documentação- Caio e Renan
+
+Issue 7: Banco de Dados - Renan
