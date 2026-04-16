@@ -199,3 +199,12 @@ Problema encontrado: nenhum.
 Ningúem encontrou nenhum problema até o momento.
 Maioria ainda não começou a resolver suas Issues, mas já tinhamos previsto isso na Sprint Planning.
 Presentes: Arthur, Caio, Ítalo, Luis e Renan. Pedro ausente.
+
+# Quinta-feira 16/04
+
+Presentes: Arthur, Caio e Renan.
+Arthur falou como foi que resolveu sua Issue de definição da tecnologia de Front-End.
+Caio falou como está indo o andamento, e projeta que terminará tudo ainda nessa Sprint.
+Renan falou que terminou a Issue de Estudo de Banco de Dados, e irá falar com o renponsável por determinar a tecnologia Back-End, porque é uma decisão importante pra terminar sua Issue de compatibilidade, e formar uma Arquitetura mais coesa e certeira.
+Nenhum presente está enfrentando alguma dificuldade.
+O Scrum Master irá falar com os ausentes pra saber como estão.
