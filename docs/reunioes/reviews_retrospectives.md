@@ -22,3 +22,13 @@ Reforçamos que devemos commitar TUDO que der, para deixarmos rastros, até de n
 Decidimos mudar as Dailies pra 3 vezes na semana, 2 vezes online e 1 por texto, pra aumentar a produtividade (ainda estamos em fase de teste).
 
 Discutimos sobre Labels S M L - separar tarefas contando o tamanho, mas ainda não decidimos nada.
+
+# 20/04
+# Review e Retrospectiva da Sprint 3
+
+Presentes: Arthur, Caio, Ítalo, Luis e Renan.  
+
+Todos mostraram o que fizeram durante a semana, para interar os integrantes sobre o andamento do projeto.  
+
+Mudamos nossas Review e Retrospectiva para as segundas-feiras, após a aula de MDS, e logo após acontecerá a Sprint Planning.  
+Mudamos nossas Dailies para as quartas-feiras, após a aula de MDS, e as sextas-feiras, às 13 horas.  

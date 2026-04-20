@@ -63,3 +63,29 @@ Issue 5: testando API’s - Luis
 Issue 6: commitar as Dailys já feitas Documentação- Caio e Renan
 
 Issue 7: Banco de Dados - Renan
+
+---
+
+# 20/04
+# Sprint Planning da Sprint 4
+
+Alocamos a Issue de Identidade Visual não resolvida na Sprint 3 para essa.
+
+Issues propostas:  
+1 - PROCESSO - Criar labels para taman" (nome da Issue ainda não claro)ho de cada Issue (XS, S, M, L, XL) - Renan (S)  
+
+2 - ESTUDO - Definir o Banco de Dados - Renan e Ítalo (S)  
+
+3 - PROCESSO - Padronização de Commits - Renan (S) -> feature, fix, refactor, bug, doc, devops, infra, gestao, management  
+
+4 - PROCESSO - Padronização de Nome de Arquivos - Arthur (S)  
+
+5 - PROCESSO - Padronização de como fazer Pull-Request – Luis (S)  
+
+6 – DESIGN – Acabar Ideias de Identidade Visual do Projeto – Caio e Arthur (L)  
+
+7 – FEATURE – Implementar estrutura de pastas - Renan (S)  
+
+8 – FEATURE – Implementar Banco de Dados -  Renan, Ítalo e Luis (L)  
+
+9 – FEATURE – Classificar as proposições - Luis (L) 
