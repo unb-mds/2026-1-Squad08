@@ -5,4 +5,4 @@ proposicoes = listar_proposicoes()
 for proposicao in proposicoes:
     print(proposicao["id"])
     print(proposicao["ementa"])
-    print("------")
+    print("------ # -------")
