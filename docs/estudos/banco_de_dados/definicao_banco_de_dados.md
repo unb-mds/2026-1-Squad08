@@ -1,3 +1,5 @@
+# Banco de Dados
+
 ## Objetivo
 
 Analisar as opções de banco de dados disponíveis para o projeto e definir a tecnologia mais adequada para a arquitetura escolhida, considerando compatibilidade com o backend em Python + Flask e as necessidades futuras do sistema.
@@ -166,3 +168,211 @@ Foram consideradas as seguintes opções:
 | Escalabilidade | Alta | Média/Alta | Baixa |
 | Produção | Excelente | Muito bom | Fraco |
 | Testes locais | Bom | Bom | Excelente |
+
+# Compatibilidade com o backend
+
+## Python
+
+O backend será desenvolvido em:
+
+*Python*
+
+Todos os bancos avaliados possuem suporte, porém o PostgreSQL possui melhor integração para aplicações robustas.
+
+Bibliotecas utilizadas:
+
+- SQLAlchemy
+- psycopg
+- Flask-SQLAlchemy
+
+## Flask
+
+O Flask se integra facilmente com PostgreSQL via URI:
+
+python
+postgresql+psycopg://usuario:senha@localhost/banco
+
+
+Exemplo de configuração:
+
+
+app.config["SQLALCHEMY_DATABASE_URI"]="postgresql+psycopg://user:password@localhost/projeto"
+
+
+## SQLAlchemy
+
+O SQLAlchemy oferece:
+
+- ORM completo
+- mapeamento objeto-relacional
+- migrations
+- segurança nas queries
+- manutenção simplificada
+
+O PostgreSQL possui excelente suporte.
+
+# Compatibilidade com futura integração com IA
+
+O sistema poderá futuramente integrar:
+
+- NLP
+- embeddings
+- análise textual
+- classificação automática
+- recomendações inteligentes
+
+O PostgreSQL oferece vantagens importantes:
+
+## JSONB
+
+Permite armazenar:
+
+- metadados
+- resultados de modelos
+- respostas estruturadas de IA
+
+Exemplo:
+
+
+{
+  "sentimento":"positivo",
+  "confianca":0.92
+}
+
+
+## Extensões futuras
+
+PostgreSQL suporta:
+
+- full-text search
+- indexação avançada
+- vetores com extensões
+- consultas semiestruturadas
+
+Isso facilita integração futura com:
+
+- spaCy
+- transformers
+- modelos locais
+- APIs externas de IA
+
+# Facilidade para a equipe
+
+A escolha também considera a equipe.
+
+O PostgreSQL apresenta:
+
+- documentação extensa
+- comunidade ativa
+- muitos tutoriais
+- padrão amplamente usado no mercado
+
+Benefícios para o time:
+
+- aprendizado profissional
+- facilidade de manutenção
+- facilidade de contratação futura
+- padronização tecnológica
+
+# Banco recomendado: PostgreSQL
+
+# Justificativa da escolha
+
+O PostgreSQL foi escolhido porque oferece:
+
+- melhor compatibilidade com Python
+- integração excelente com Flask
+- suporte completo ao SQLAlchemy
+- compatibilidade nativa com psycopg
+- suporte avançado a dados estruturados
+- suporte a JSON para IA futura
+- escalabilidade superior
+- segurança
+- robustez para produção
+
+# Uso recomendado no projeto
+
+## Ambiente local
+
+Durante desenvolvimento:
+
+- PostgreSQL como principal
+- SQLite apenas para testes rápidos (TOTALMENTE OPCIONAL)
+
+## Produção
+
+Em produção:
+
+- PostgreSQL como banco oficial
+
+# Próximos estudos necessários
+
+Após a definição do banco, a equipe deverá aprofundar os estudos em:
+
+## Modelagem de dados
+
+Estudar:
+
+- entidades
+- relacionamentos
+- cardinalidade
+- normalização
+
+## SQL básico
+
+Aprender:
+
+- SELECT
+- INSERT
+- UPDATE
+- DELETE
+- JOIN
+- GROUP BY
+
+## SQLAlchemy ORM
+
+Entender:
+
+- models
+- relationships
+- sessions
+- migrations
+
+## Migrações
+
+Estudar:
+
+- Flask-Migrate
+- Alembic
+
+Para:
+
+- versionar alterações
+- manter histórico do schema
+
+## Performance futura
+
+Investigar:
+
+- índices
+- otimização de consultas
+- monitoramento
+- tuning
+
+# Riscos evitados com essa decisão
+
+A escolha antecipada evita:
+
+- retrabalho estrutural
+- perda de performance
+- incompatibilidades
+- dificuldade de manutenção
+- limitações futuras com IA
+
+# Conclusão
+
+Após análise técnica das alternativas, o banco de dados definido para o projeto é:
+
+## *PostgreSQL*
+
+A escolha oferece segurança técnica para o presente e flexibilidade para a evolução futura do sistema.
