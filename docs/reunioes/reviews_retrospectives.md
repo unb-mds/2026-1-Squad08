@@ -32,3 +32,11 @@ Todos mostraram o que fizeram durante a semana, para interar os integrantes sobr
 
 Mudamos nossas Review e Retrospectiva para as segundas-feiras, após a aula de MDS, e logo após acontecerá a Sprint Planning.  
 Mudamos nossas Dailies para as quartas-feiras, após a aula de MDS, e as sextas-feiras, às 13 horas.  
+
+# 27/04
+
+Presentes: Caio, Ítalo, Luís e Renan  
+Mostramos tudo o que foi entregue nessa semana.  
+Criar um Protótipo Interativo do site design Identidade visual e UX -> levado para a Sprint 5, pois não foi concluído ainda.  
+Implementar banco de dados -> levado para a Sprint 5, pois não houve tempo para os integrantes se dedicarem a isso.  
+Ninguém enfrentou um problema grande. As mudanças nas cerimônias Scrum surtiram efeito positivo. 
