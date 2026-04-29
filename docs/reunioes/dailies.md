@@ -5,6 +5,8 @@ Vendo que, apesar de ajudar a saber o que cada um está fazendo, não contribui 
 
 Com isso, foi definido que as Dailies serão feitas nas terças e quintas, às 20 horas de forma online, e, apenas aos sábados, por mensagem, para alguém reportar necessidade de adiar para a Sprint seguinte, ou se precisar de ajuda urgente.
 
+A partir da semana do dia 20/04, mudamos as dailies para quarta e sexta, com quarta, sendo logo após a aula, e sexta, em nosso Discord, às 13 horas.
+
 # Terça-feira 07/04
 
 ## Renan
@@ -208,3 +210,14 @@ Caio falou como está indo o andamento, e projeta que terminará tudo ainda ness
 Renan falou que terminou a Issue de Estudo de Banco de Dados, e irá falar com o renponsável por determinar a tecnologia Back-End, porque é uma decisão importante pra terminar sua Issue de compatibilidade, e formar uma Arquitetura mais coesa e certeira.
 Nenhum presente está enfrentando alguma dificuldade.
 O Scrum Master irá falar com os ausentes pra saber como estão.
+
+# Sábado 18/04
+
+Ninguém lembrou da Daily.
+
+---
+
+# Quarta 22/04
+
+Presentes: Caio, Ítalo, Luís e Renan
+Todos mostraram o que estavam fazendo. Todos foram incluídos no Project.
