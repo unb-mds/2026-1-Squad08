@@ -1,6 +1,11 @@
 # Identidade Visual do Projeto
 ## Monitoramento Legislativo – Proteção de Crianças na Internet
+---
+## Exemplo Figma
 
+Abaixo, segue um estudo realizado no site Figma com detalhes visuais e testes feitos para melhor visualização:
+
+[![Título da Imagem](https://play-lh.googleusercontent.com/hoVBnPBRehmXsCqESLXRH2E3OTxklkwKZlb1psn7imm0VUSobn2nevS9RRFWb9GM4-o=w240-h480-rw)](https://www.figma.com/design/AnQaZLh3I0PuwHrCeWATfy/Identidade-Visual-Projeto-MDS?node-id=0-1&t=qyLGSw2rnOed27WN-1)
 ---
 
 ## 1. Propósito e Público-Alvo
@@ -454,12 +459,6 @@ A paleta equilibra **azuis institucionais** (confiança), **verdes** (proteção
 
 A tipografia **Inter** garante modernidade e legibilidade, enquanto o estilo visual minimalista mantém o foco no conteúdo crítico: as leis e políticas que protegem crianças no ambiente digital.
 
----
-## 14. Exemplo Figma
-
-Abaixo, segue um estudo realizado no site Figma com detalhes visuais e testes feitos para melhor visualização:
-
-[![Título da Imagem](https://play-lh.googleusercontent.com/hoVBnPBRehmXsCqESLXRH2E3OTxklkwKZlb1psn7imm0VUSobn2nevS9RRFWb9GM4-o=w240-h480-rw)](https://www.figma.com/design/AnQaZLh3I0PuwHrCeWATfy/Identidade-Visual-Projeto-MDS?node-id=0-1&t=qyLGSw2rnOed27WN-1)
 ---
 
 **Documento criado em**: 17/04/2026  
