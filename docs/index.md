@@ -72,7 +72,7 @@ Para mais detalhes, acesse:
 
 * [Arquitetura e Fluxos do Sistema](estudos/arquitetura/diagrama_arquitetura_v2.md)
 * [Frontend](estudos/frontend/tecnologias_estrutura.md) 
-* [Banco de Dados](estudos/banco_de_dados/definicao_banco_de_dados)
+* [Banco de Dados](estudos/banco_de_dados/definicao_banco_de_dados.md)
 * [API](estudos/API/levantamento_api.md)
 
 ---
