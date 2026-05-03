@@ -1,5 +1,5 @@
 # Diagrama da Arquitetura do Projeto v2
-# LINK DO FIGMA: https://www.figma.com/board/5qqctfNDqw7eqWz6PsKYfS/arquitetura_diagrama_v2?node-id=0-1&t=tOb76BxZKqqiHhOT-1
+LINK DO FIGMA: https://www.figma.com/board/5qqctfNDqw7eqWz6PsKYfS/arquitetura_diagrama_v2?node-id=0-1&t=tOb76BxZKqqiHhOT-1
 
 Esse diagrama será feito com base na estrutura base do Projeto, para facilitar o entediimento e desenvolvimento. Com o decorrer das Sprints, vamos atualizando o diagrama de acordo com as necessidades que vermos.
 
