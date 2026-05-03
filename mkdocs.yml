@@ -21,6 +21,7 @@ nav:
   - Diagrama V2: estudos/arquitetura/diagrama_arquitetura_v2.md
   - Fluxo de Dados: estudos/arquitetura/estudo_fluxo_de_dados.md
   - Login: estudos/arquitetura/estudo_login.md
+  - Estudo Inicial: estudos/arquitetura/estudo_arquiteturas.md
 
 - Backend:
 
@@ -53,7 +54,7 @@ nav:
 
 - Gestão:
 
-  - Requisitos: estudos/requisitos/requisitos_software.md
+  - Requisitos: estudos/requisitos/requisitos_de_software.md
   - Documento Complementar: estudos/requisitos/estudo_requisitos_software.md
   - Dailies: reunioes/dailies.md
   - Horários: reunioes/horarios.md
@@ -64,7 +65,10 @@ nav:
 - Padrões:
 
   - Commits: padrao_organizacao/padrao_commits.md
-  - Pull Requests: padrao_organizacao/padronização_PR.md
+  - Pull Requests: padrao_organizacao/padrao_PR.md
+
+- Requisitos:
+    - Documento: estudos/requisitos/requisitos_de_software.md
 
 plugins:
 
