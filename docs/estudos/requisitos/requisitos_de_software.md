@@ -68,25 +68,7 @@
 
 ---
 
-### US03 — Atualização automática periódica
-
-**Como** analista,
-**Quero** que os dados sejam atualizados automaticamente,
-**Para que** eu não precise atualizar manualmente.
-
-**Critérios de aceitação:**
-
-- Permitir configuração de intervalo de atualização pelo administrador
-- Execução automática diária como comportamento padrão
-- Registro de data e hora da última atualização bem-sucedida
-- `[NOVO]` Notificação ao administrador quando a atualização não ocorrer no prazo configurado
-- `[NOVO]` Interface deve exibir status em tempo real (em andamento, concluído, erro)
-- `[NOVO]` Deve suportar acionamento manual imediato pelo administrador
-- `[CORREÇÃO]` A detecção de proposições atualizadas deve usar o endpoint de tramitações no período como mecanismo de identificação de mudanças
-
----
-
-### US04 — Armazenamento estruturado de proposições
+### US03 — Armazenamento estruturado de proposições
 
 **Como** sistema,
 **Quero** armazenar proposições em banco de dados relacional,
@@ -241,23 +223,8 @@
 
 ---
 
-### US06 — Classificação manual pelo administrador
 
-**Como** administrador,
-**Quero** corrigir classificações incorretas,
-**Para que** o sistema seja mais preciso.
-
-**Critérios de aceitação:**
-
-- Apenas usuários com perfil administrador podem editar classificações
-- Alterações devem ser salvas imediatamente
-- Histórico de alterações deve ser registrado com autoria e timestamp
-- `[NOVO]` Sistema deve registrar razão da correção (campo obrigatório)
-- `[NOVO]` Deve ser possível acessar histórico de alterações
-
----
-
-### US07 — Múltiplos subtemas por proposição
+### US06 — Múltiplos subtemas por proposição
 
 **Como** analista,
 **Quero** associar múltiplos subtemas a uma proposição,
@@ -398,25 +365,9 @@
 
 ---
 
-### US15 — Exportação de dados
-
-**Como** usuário,
-**Quero** exportar dados,
-**Para que** eu os utilize em ferramentas externas.
-
-**Critérios de aceitação:**
-
-- Exportação em CSV, Excel (.xlsx) e PDF
-- Dados exportados devem ser idênticos ao que é exibido na interface
-- `[NOVO]` Exportação deve aplicar os filtros ativos no momento
-- `[NOVO]` Arquivo exportado deve incluir metadados: data, filtros usados e usuário
-- `[NOVO]` Exportações grandes (acima de 1000 linhas) devem ser processadas em background com notificação por e-mail ao concluir (Opcional)
-
----
-
 ## ÉPICO 6 — Detalhamento das Proposições
 
-### US16 — Visualizar detalhes de uma proposição
+### US15 — Visualizar detalhes de uma proposição
 
 **Como** usuário,
 **Quero** ver os detalhes completos de uma proposição,
@@ -436,40 +387,7 @@
 
 ## ÉPICO 7 — Alertas e Monitoramento
 
-### US17 — Receber alertas de novas proposições
-
-**Como** usuário,
-**Quero** receber alertas sobre novas proposições,
-**Para que** eu me mantenha atualizado sem acessar o sistema constantemente.
-
-> **Contexto arquitetural:** o fluxo de notificações é: proposição atualizada → sistema identifica usuários que favoritaram → cria registro na tabela `notificacoes` → usuário visualiza no sistema.
-
-**Critérios de aceitação:**
-
-- `[NOVO]` Notificação exibida dentro do sistema ao acessar (tabela `notificacoes`)
-- `[NOVO]` Alertas devem ser gerados em até 1h após nova coleta bem-sucedida
-- `[NOVO]` Alerta deve incluir título, autor e link da proposição
-- `[NOVO]` Usuário deve poder ativar e desativar alertas a qualquer momento
-- `[CORREÇÃO-ARQ]` As notificações devem ser criadas pelo backend ao detectar mudanças nas proposições favoritadas — o frontend apenas consulta e exibe
-
----
-
-### US18 — Configurar alertas por subtema
-
-**Como** usuário,
-**Quero** configurar alertas filtrados por subtema,
-**Para que** receba apenas o que é relevante para mim.
-
-**Critérios de aceitação:**
-
-- `[NOVO]` Selecionar um ou mais subtemas de interesse para monitorar
-- `[NOVO]` Configurar frequência de recebimento: imediato, diário ou semanal
-- `[NOVO]` Deve ser possível ter múltiplos perfis de alerta ativos simultaneamente
-- `[NOVO]` Interface deve listar alertas existentes com opção de editar e excluir cada um
-
----
-
-### US19 — Histórico de mudanças em proposições
+### US16 — Histórico de mudanças em proposições
 
 **Como** administrador,
 **Quero** visualizar mudanças ocorridas nas proposições,
@@ -484,43 +402,9 @@
 
 ---
 
-## ÉPICO 8 — Segurança e Acesso
-
-### US20 — Controle de acesso e permissões
-
-**Como** administrador,
-**Quero** gerenciar usuários e permissões,
-**Para que** eu controle quem acessa o quê no sistema.
-
-**Critérios de aceitação:**
-
-- Perfis disponíveis: cidadão, analista, pesquisador, gestor e administrador
-- Administrador pode criar, editar e desativar usuários
-- `[CORREÇÃO-LOGIN]` Ações administrativas sensíveis devem exigir reautenticação via Google OAuth antes de serem executadas
-- `[NOVO]` Tentativas de acesso indevido devem gerar alerta ao administrador
-- `[NOVO]` Log de acesso de cada usuário deve ser armazenado por no mínimo 90 dias
-
----
-
-### US21 — Segurança de dados
-
-**Como** usuário,
-**Quero** que meus dados estejam protegidos,
-**Para que** eu confie no sistema.
-
-**Critérios de aceitação:**
-
-- `[NOVO]` Dados em trânsito protegidos por TLS 1.2 ou superior
-- `[NOVO]` Dados sensíveis em repouso devem ser criptografados
-- `[NOVO]` Sistema deve estar em conformidade com a LGPD
-- `[NOVO]` Relatório de vulnerabilidades (pentest) realizado a cada 6 meses
-- `[CORREÇÃO-LOGIN]` O sistema não armazena senhas — a autenticação é delegada ao Google OAuth 2.0; tokens de acesso devem ser armazenados de forma segura (httpOnly cookie)
-
----
-
 ## ÉPICO 9 — Usabilidade e Performance
 
-### US22 — Interface responsiva
+### US17 — Interface responsiva
 
 **Como** usuário,
 **Quero** acessar o sistema em qualquer dispositivo,
@@ -535,7 +419,7 @@
 
 ---
 
-### US23 — Performance do sistema
+### US18 — Performance do sistema
 
 **Como** usuário,
 **Quero** respostas rápidas do sistema,
@@ -561,7 +445,7 @@
 
 ---
 
-### US24 — Login com conta Google
+### US19 — Login com conta Google
 
 **Como** usuário,
 **Quero** fazer login no sistema utilizando minha conta Google,
@@ -579,7 +463,7 @@
 
 ---
 
-### US25 — Redirecionamento seguro pós-login
+### US20 — Redirecionamento seguro pós-login
 
 **Como** usuário,
 **Quero** ser redirecionado de forma segura de volta ao sistema após o login com Google,
@@ -594,7 +478,7 @@
 
 ---
 
-### US26 — Persistência de sessão após login
+### US21 — Persistência de sessão após login
 
 **Como** usuário autenticado,
 **Quero** permanecer logado mesmo após fechar o aplicativo,
@@ -606,22 +490,6 @@
 - `[NOVO]` Opção "lembrar por 30 dias" com consentimento explícito do usuário
 - `[NOVO]` Invalidação da sessão ao clicar em "sair"
 - `[CORREÇÃO-LOGIN]` Revogação do token Google deve ser acionada no logout para encerrar a sessão também no provedor
-
----
-
-### US27 — Identificação e gestão de perfis `[NOVA US]`
-
-**Como** administrador da plataforma,
-**Quero** que usuários tenham perfis distintos,
-**Para que** o acesso às funcionalidades seja controlado por nível de permissão.
-
-**Critérios de aceitação:**
-
-- `[NOVO]` Perfis disponíveis: cidadão, pesquisador, analista e gestor
-- `[NOVO]` Funcionalidades e menus exibidos conforme o perfil do usuário logado
-- `[NOVO]` Administrador pode alterar o perfil de qualquer usuário
-- `[CORREÇÃO-LOGIN]` Na criação da conta (primeiro login via Google), o perfil padrão atribuído é `cidadão`; o administrador pode elevá-lo posteriormente
-- `[NOVO]` Perfil do usuário deve ser exibido na interface (nome, foto do Google e nível de acesso)
 
 ---
 
