@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,13 @@
         <link rel="shortcut icon" href="../../../img/favicon.ico">
         <title>Labels de Tamanho das Issues - Monitoramento Legislativo – Proteção de Crianças na Internet</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="../../..">Monitoramento Legislativo – Proteção de Crianças na Internet</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,50 +34,50 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../.." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../../projeto/" class="nav-link">Projeto</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../arquitetura/" class="nav-link">Arquitetura</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../API/" class="nav-link">Backend / API</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../banco_de_dados/" class="nav-link">Banco de Dados</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../frontend/" class="nav-link">Frontend</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../design/" class="nav-link">Design</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../" class="nav-link">Git & Organização</a>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">Git / GitHub</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../metodos_ageis/" class="nav-link">Metodologia</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../../reunioes/" class="nav-link">Gestão</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../../padrao_organizacao/" class="nav-link">Padrões</a>
+                            <li class="nav-item">
+                                <a href="../../../padrao_organizacao/" class="nav-link">Padrão / Organização</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../requisitos/" class="nav-link">Requisitos</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../inteligencia_artificial/" class="nav-link">Inteligência Artificial</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -84,40 +88,40 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#labels-de-tamanho-das-issues" class="nav-link">Labels de Tamanho das Issues</a>
+            <li class="nav-item" data-bs-level="1"><a href="#labels-de-tamanho-das-issues" class="nav-link">Labels de Tamanho das Issues</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#padrao-de-tamanhos" class="nav-link">Padrão de Tamanhos</a>
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#criterios-para-classificacao" class="nav-link">Critérios para Classificação</a>
+            <li class="nav-item" data-bs-level="2"><a href="#padrao-de-tamanhos" class="nav-link">Padrão de tamanhos</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#cores" class="nav-link">Cores</a>
+            <li class="nav-item" data-bs-level="2"><a href="#criterios-para-classificacao" class="nav-link">Critérios para classificação</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#processo-de-uso" class="nav-link">Processo de Uso</a>
+            <li class="nav-item" data-bs-level="2"><a href="#cores" class="nav-link">Cores</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#definicao-da-label" class="nav-link">Definição da Label</a>
+            <li class="nav-item" data-bs-level="2"><a href="#processo-de-uso" class="nav-link">Processo de uso</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#definicao-da-label" class="nav-link">Definição da label</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -138,7 +142,8 @@
 <li>previsibilidade de entrega</li>
 <li>divisão de tarefas grandes em subtarefas menores</li>
 </ul>
-<h2 id="padrao-de-tamanhos">Padrão de Tamanhos</h2>
+<hr />
+<h2 id="padrao-de-tamanhos">Padrão de tamanhos</h2>
 <p>Cada Issue deverá receber uma label de tamanho:</p>
 <table>
 <thead>
@@ -182,68 +187,41 @@
 </tr>
 </tbody>
 </table>
-<h2 id="criterios-para-classificacao">Critérios para Classificação</h2>
+<hr />
+<h2 id="criterios-para-classificacao">Critérios para classificação</h2>
 <h3 id="xs">XS</h3>
-<p>Utilizar quando:</p>
-<ul>
-<li>ajuste simples</li>
-<li>correção visual pequena</li>
-<li>alteração pontual</li>
-<li>documentação curta</li>
-</ul>
-<p><strong>Exemplo:</strong> corrigir texto, alterar cor de botão, ajustar label.</p>
+<p>Ajuste simples, correção visual pequena, alteração pontual ou documentação curta.</p>
+<p>Exemplo: corrigir texto, alterar cor de botão, ajustar label.</p>
+<hr />
 <h3 id="s">S</h3>
-<p>Utilizar quando:</p>
-<ul>
-<li>pequena implementação</li>
-<li>bug simples</li>
-<li>pequena melhoria</li>
-</ul>
-<p><strong>Exemplo:</strong> criar endpoint simples, ajustar validação.</p>
+<p>Pequena implementação, bug simples ou pequena melhoria.</p>
+<p>Exemplo: criar endpoint simples, ajustar validação.</p>
+<hr />
 <h3 id="m">M</h3>
-<p>Utilizar quando:</p>
-<ul>
-<li>funcionalidade média</li>
-<li>integração simples</li>
-<li>alteração em múltiplos arquivos</li>
-</ul>
-<p><strong>Exemplo:</strong> criar formulário completo com validação.</p>
+<p>Funcionalidade média, integração simples ou alteração em múltiplos arquivos.</p>
+<p>Exemplo: criar formulário completo com validação.</p>
+<hr />
 <h3 id="l">L</h3>
-<p>Utilizar quando:</p>
-<ul>
-<li>funcionalidade importante</li>
-<li>integração com banco/API</li>
-<li>impacto em várias partes do sistema</li>
-</ul>
-<p><strong>Exemplo:</strong> implementar autenticação.</p>
+<p>Funcionalidade importante, integração com banco ou API, impacto em várias partes do sistema.</p>
+<p>Exemplo: implementar autenticação.</p>
+<hr />
 <h3 id="xl">XL</h3>
-<p>Utilizar quando:</p>
-<ul>
-<li>tarefa muito grande</li>
-<li>alto risco técnico</li>
-<li>necessidade de divisão</li>
-</ul>
-<p><strong>Exemplo:</strong> módulo completo novo.</p>
-<blockquote>
-<p>Sempre que possível, uma Issue XL deve ser dividida em Issues menores, ou designada para mais de um integrante.
-</p>
-</blockquote>
+<p>Tarefa muito grande, alto risco técnico ou necessidade de divisão.</p>
+<p>Exemplo: módulo completo novo.</p>
+<p>Sempre que possível, uma Issue XL deve ser dividida em Issues menores ou designada para mais de um integrante.</p>
+<hr />
 <h2 id="cores">Cores</h2>
+<p>As cores seguem uma lógica visual de esforço crescente:</p>
 <ul>
-<li>XS: Verde claro</li>
-<li>S: Verde</li>
-<li>M: Amarelo</li>
-<li>L: Laranja</li>
-<li>XL: Vermelho</li>
+<li><strong>XS</strong> — verde claro</li>
+<li><strong>S</strong> — verde</li>
+<li><strong>M</strong> — amarelo</li>
+<li><strong>L</strong> — laranja</li>
+<li><strong>XL</strong> — vermelho</li>
 </ul>
-<h3 id="logica-visual">Lógica visual</h3>
-<ul>
-<li>verde = menor esforço</li>
-<li>amarelo = médio</li>
-<li>vermelho = maior esforço</li>
-</ul>
-<p>Isso facilita a leitura rápida do backlog.</p>
-<h2 id="processo-de-uso">Processo de Uso</h2>
+<p>Verde representa menor esforço, amarelo o médio e vermelho o maior, facilitando a leitura rápida do backlog.</p>
+<hr />
+<h2 id="processo-de-uso">Processo de uso</h2>
 <p>Ao criar uma nova Issue:</p>
 <ol>
 <li>Criar a Issue normalmente</li>
@@ -252,13 +230,9 @@
 <li>Validar com a equipe se necessário</li>
 <li>Se for XL, considerar quebrar em subtarefas ou designar mais integrantes</li>
 </ol>
-<h2 id="definicao-da-label">Definição da Label</h2>
-<p>A definição da label será feita por:</p>
-<ul>
-<li>autor da Issue inicialmente</li>
-<li>revisada durante planning</li>
-<li>validada pela equipe na mesma cerimônia</li>
-</ul></div>
+<hr />
+<h2 id="definicao-da-label">Definição da label</h2>
+<p>A label será definida pelo autor da Issue inicialmente, revisada durante o planning e validada pela equipe na mesma cerimônia.</p></div>
             </div>
         </div>
 
@@ -266,8 +240,7 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -280,7 +253,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -300,7 +273,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,13 @@
         <link rel="shortcut icon" href="../../../img/favicon.ico">
         <title>Estudo sobre integração de IA no projeto - Monitoramento Legislativo – Proteção de Crianças na Internet</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="../../..">Monitoramento Legislativo – Proteção de Crianças na Internet</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,50 +34,50 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../.." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../../projeto/" class="nav-link">Projeto</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../arquitetura/" class="nav-link">Arquitetura</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../API/" class="nav-link">Backend / API</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../banco_de_dados/" class="nav-link">Banco de Dados</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../frontend/" class="nav-link">Frontend</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../design/" class="nav-link">Design</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../git_github/" class="nav-link">Git & Organização</a>
+                            <li class="nav-item">
+                                <a href="../../git_github/" class="nav-link">Git / GitHub</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../metodos_ageis/" class="nav-link">Metodologia</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../../reunioes/" class="nav-link">Gestão</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../../padrao_organizacao/" class="nav-link">Padrões</a>
+                            <li class="nav-item">
+                                <a href="../../../padrao_organizacao/" class="nav-link">Padrão / Organização</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../requisitos/" class="nav-link">Requisitos</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../" class="nav-link">Inteligência Artificial</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -84,32 +88,40 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#estudo-sobre-integracao-de-ia-no-projeto" class="nav-link">Estudo sobre integração de IA no projeto</a>
+            <li class="nav-item" data-bs-level="1"><a href="#estudo-sobre-integracao-de-ia-no-projeto" class="nav-link">Estudo sobre integração de IA no projeto</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#1-definicao-da-tecnologia-stack" class="nav-link">1. Definição da Tecnologia (Stack)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#2-ponto-de-integracao-no-sistema" class="nav-link">2. Ponto de Integração no Sistema</a>
+            <li class="nav-item" data-bs-level="2"><a href="#1-definicao-da-tecnologia-stack" class="nav-link">1. Definição da Tecnologia (Stack)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#3-estrutura-de-codigo-e-modulos" class="nav-link">3. Estrutura de Código e Módulos</a>
+            <li class="nav-item" data-bs-level="2"><a href="#2-ponto-de-integracao-no-sistema" class="nav-link">2. Ponto de Integração no Sistema</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#4-fluxo-basico-de-funcionamento-entrada-filtragem-saida" class="nav-link">4. Fluxo Básico de Funcionamento (Entrada → Filtragem → Saída)</a>
+            <li class="nav-item" data-bs-level="2"><a href="#3-estrutura-de-codigo-e-modulos" class="nav-link">3. Estrutura de Código e Módulos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-fluxo-basico-de-funcionamento-entrada-filtragem-saida" class="nav-link">4. Fluxo Básico de Funcionamento (Entrada → Filtragem → Saída)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-gestao-de-cotas-e-limites" class="nav-link">5. Gestão de Cotas e Limites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sintese" class="nav-link">Síntese</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -123,47 +135,48 @@
 <h1 id="estudo-sobre-integracao-de-ia-no-projeto">Estudo sobre integração de IA no projeto</h1>
 <h2 id="1-definicao-da-tecnologia-stack">1. Definição da Tecnologia (Stack)</h2>
 <ul>
-<li><strong>Modelo Escolhido:</strong> Google Gemini 1.5 Flash.</li>
-<li><strong>Forma de Uso:</strong> API via SDK oficial (<code>google-generativeai</code>).</li>
-<li><strong>Objetivo da IA:</strong> Triagem e classificação de dados brutos (Filtragem).</li>
-<li><strong>Justificativa:</strong> APIs governamentais retornam uma grande massa de dados. A IA atuará como um filtro de "peneira fina" para identificar quais projetos de lei (PLs) realmente tocam no tema "Proteção de Crianças na Internet", separando-os de leis genéricas ou irrelevantes.</li>
+<li><strong>Modelo Escolhido:</strong> Google Gemini 1.5 Flash</li>
+<li><strong>Forma de Uso:</strong> API via SDK oficial (<code>google-generativeai</code>)</li>
+<li><strong>Objetivo da IA:</strong> Triagem e classificação de dados brutos (filtragem)</li>
+<li><strong>Justificativa:</strong> APIs governamentais retornam uma grande massa de dados. A IA atuará como um filtro para identificar quais projetos de lei (PLs) são relacionados ao tema “Proteção de Crianças na Internet”, separando-os de conteúdos genéricos ou irrelevantes.</li>
 </ul>
 <h2 id="2-ponto-de-integracao-no-sistema">2. Ponto de Integração no Sistema</h2>
 <p>A IA será o <strong>Portão de Qualidade (Quality Gate)</strong> do sistema.</p>
 <ul>
-<li><strong>Localização Arquitetural:</strong> Dentro da camada de <code>services</code> (ex: <code>app/services/filter_service.py</code>).</li>
-<li><strong>Momento da Integração:</strong> Ocorre logo após a coleta dos dados brutos da API do Governo. Somente os dados aprovados pelo filtro de IA serão armazenados permanentemente no PostgreSQL para exibição.</li>
+<li><strong>Localização arquitetural:</strong> camada de <code>services</code> (ex: <code>app/services/filter_service.py</code>)</li>
+<li><strong>Momento da integração:</strong> após a coleta dos dados brutos da API governamental</li>
+<li><strong>Resultado:</strong> apenas dados aprovados pela IA serão armazenados no PostgreSQL e exibidos no sistema</li>
 </ul>
 <h2 id="3-estrutura-de-codigo-e-modulos">3. Estrutura de Código e Módulos</h2>
 <ul>
-<li><strong><code>app/services/filter_service.py</code></strong>: Contém a lógica de filtragem. Recebe uma lista de PLs e retorna apenas os que atendem aos critérios de proteção infantil.</li>
-<li><strong><code>app/models.py</code></strong>: Armazena apenas os itens filtrados, otimizando o espaço do banco de dados.</li>
-<li><strong><code>.env</code></strong>: Protege a chave de acesso à API do Gemini.</li>
+<li><code>app/services/filter_service.py</code>: lógica de filtragem; recebe uma lista de PLs e retorna apenas os relevantes</li>
+<li><code>app/models.py</code>: armazena apenas itens filtrados, otimizando o banco de dados</li>
+<li><code>.env</code>: armazenamento seguro da chave de acesso à API do Gemini</li>
 </ul>
 <h2 id="4-fluxo-basico-de-funcionamento-entrada-filtragem-saida">4. Fluxo Básico de Funcionamento (Entrada → Filtragem → Saída)</h2>
-<p>O fluxo de filtragem segue esta lógica:</p>
-<ol>
-<li><strong>Entrada (Raw Data):</strong> O sistema busca todos os PLs do dia. Muitos tratam de temas diversos (saúde, economia, transporte).</li>
-<li><strong>Processamento (AI Filtering):</strong><ul>
-<li>O <code>filter_service</code> envia o título e a ementa do PL para a IA.</li>
-<li><strong>O Prompt de Filtragem:</strong> <em>"Analise o projeto abaixo. Ele contém medidas diretas sobre proteção de menores em ambiente digital, crimes cibernéticos contra crianças ou segurança de dados infantis? Responda apenas SIM ou NÃO."</em></li>
-<li>A IA atua como um classificador binário.</li>
-</ul>
-</li>
-<li><strong>Saída (Curated Content):</strong><ul>
-<li>Se <strong>NÃO</strong>: O dado é descartado.</li>
-<li>Se <strong>SIM</strong>: O sistema processa o PL para exibição no site, garantindo um feed 100% focado no tema.</li>
-<li></li>
-</ul>
-</li>
-</ol>
-<p><strong>Gestão de Cotas e Limites:</strong>
-Para mitigar o limite de 15 RPM (requisições por minuto) do plano gratuito do Gemini, o sistema adotará:</p>
+<h3 id="1-entrada-raw-data">1. Entrada (Raw Data)</h3>
+<p>O sistema coleta diariamente projetos de lei da API governamental, contendo dados de diversos temas.</p>
+<h3 id="2-processamento-ai-filtering">2. Processamento (AI Filtering)</h3>
+<p>O <code>filter_service</code> envia o título e a ementa do PL para a IA.</p>
+<p><strong>Prompt de filtragem:</strong></p>
+<blockquote>
+<p>Analise o projeto abaixo. Ele contém medidas diretas sobre proteção de menores em ambiente digital, crimes cibernéticos contra crianças ou segurança de dados infantis? Responda apenas SIM ou NÃO.</p>
+</blockquote>
+<p>A IA atua como um classificador binário.</p>
+<h3 id="3-saida-curated-content">3. Saída (Curated Content)</h3>
 <ul>
-<li><strong>Pré-filtragem por Keywords:</strong> Redução do volume de dados enviados à IA.</li>
-<li><strong>Batch Processing:</strong> Envio de múltiplos registros em uma única chamada.</li>
-<li><strong>Persistência de Decisão:</strong> Projetos já analisados são marcados no banco para evitar reprocessamento e desperdício de cota.</li>
-</ul></div>
+<li><strong>NÃO:</strong> o dado é descartado</li>
+<li><strong>SIM:</strong> o dado é salvo e exibido no sistema</li>
+</ul>
+<h2 id="5-gestao-de-cotas-e-limites">5. Gestão de Cotas e Limites</h2>
+<p>Para lidar com o limite de requisições da API do Gemini (15 RPM no plano gratuito), serão aplicadas estratégias de otimização:</p>
+<ul>
+<li>Pré-filtragem por keywords: reduz o volume enviado à IA</li>
+<li>Batch processing: envio de múltiplos registros em uma única requisição</li>
+<li>Persistência de decisões: evitar reprocessar PLs já analisados</li>
+</ul>
+<h2 id="sintese">Síntese</h2>
+<p>A IA será usada como um filtro inteligente dentro da camada de serviços, funcionando como um mecanismo de triagem entre os dados brutos da API e os dados realmente relevantes para o sistema. Isso reduz ruído, melhora a qualidade da informação exibida e mantém o sistema focado no objetivo principal do projeto.</p></div>
             </div>
         </div>
 
@@ -171,8 +184,7 @@ Para mitigar o limite de 15 RPM (requisições por minuto) do plano gratuito do 
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -185,7 +197,7 @@ Para mitigar o limite de 15 RPM (requisições por minuto) do plano gratuito do 
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -205,7 +217,7 @@ Para mitigar o limite de 15 RPM (requisições por minuto) do plano gratuito do 
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">

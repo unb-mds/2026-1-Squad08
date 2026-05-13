@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,13 @@
         <link rel="shortcut icon" href="../../../img/favicon.ico">
         <title>Decisão de Hospedagem do Banco de Dados - Monitoramento Legislativo – Proteção de Crianças na Internet</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="../../..">Monitoramento Legislativo – Proteção de Crianças na Internet</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,50 +34,50 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../.." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../../projeto/" class="nav-link">Projeto</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../arquitetura/" class="nav-link">Arquitetura</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../API/" class="nav-link">Backend / API</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../" class="nav-link">Banco de Dados</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../frontend/" class="nav-link">Frontend</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../design/" class="nav-link">Design</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../git_github/" class="nav-link">Git & Organização</a>
+                            <li class="nav-item">
+                                <a href="../../git_github/" class="nav-link">Git / GitHub</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../metodos_ageis/" class="nav-link">Metodologia</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../../reunioes/" class="nav-link">Gestão</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../../padrao_organizacao/" class="nav-link">Padrões</a>
+                            <li class="nav-item">
+                                <a href="../../../padrao_organizacao/" class="nav-link">Padrão / Organização</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../requisitos/" class="nav-link">Requisitos</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../inteligencia_artificial/" class="nav-link">Inteligência Artificial</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -84,64 +88,40 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#decisao-de-hospedagem-do-banco-de-dados" class="nav-link">Decisão de Hospedagem do Banco de Dados</a>
+            <li class="nav-item" data-bs-level="1"><a href="#decisao-de-hospedagem-do-banco-de-dados" class="nav-link">Decisão de Hospedagem do Banco de Dados</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#1-objetivo" class="nav-link">1. Objetivo</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#2-opcoes-analisadas" class="nav-link">2. Opções Analisadas</a>
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#3-analise-tecnica-banco-sql-em-nuvem" class="nav-link">3. Análise Técnica – Banco SQL em Nuvem</a>
+            <li class="nav-item" data-bs-level="2"><a href="#opcoes-analisadas" class="nav-link">Opções analisadas</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#32-estimativa-de-uso-de-armazenamento" class="nav-link">3.2 Estimativa de Uso de Armazenamento</a>
+            <li class="nav-item" data-bs-level="2"><a href="#analise-tecnica" class="nav-link">Análise técnica</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#33-opcoes-em-nuvem" class="nav-link">3.3 Opções em Nuvem</a>
+            <li class="nav-item" data-bs-level="2"><a href="#analise-de-risco" class="nav-link">Análise de risco</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#34-comparacao" class="nav-link">3.4 Comparação</a>
+            <li class="nav-item" data-bs-level="2"><a href="#decisao-final" class="nav-link">Decisão final</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#4-analise-de-risco" class="nav-link">4. Análise de Risco</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#5-decisao-final" class="nav-link">5. Decisão Final</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#6-justificativa" class="nav-link">6. Justificativa</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#7-estrategia-de-uso" class="nav-link">7. Estratégia de Uso</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#8-plano-de-contingencia" class="nav-link">8. Plano de Contingência</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#9-conclusao" class="nav-link">9. Conclusão</a>
+            <li class="nav-item" data-bs-level="2"><a href="#conclusao" class="nav-link">Conclusão</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -153,72 +133,43 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="decisao-de-hospedagem-do-banco-de-dados">Decisão de Hospedagem do Banco de Dados</h1>
-<h2 id="1-objetivo">1. Objetivo</h2>
+<h2 id="objetivo">Objetivo</h2>
 <p>Definir a melhor estratégia de hospedagem para o banco de dados do projeto, considerando:</p>
 <ul>
-<li>Uso de <strong>PostgreSQL</strong></li>
-<li>Estrutura com menos de 10 <strong>tabelas relacionais</strong></li>
-<li><strong>Baixo volume de requisições</strong> (projeto acadêmico)</li>
-<li><strong>Crescimento de dados incerto</strong></li>
+<li>uso de PostgreSQL</li>
+<li>estrutura com menos de 10 tabelas relacionais</li>
+<li>baixo volume de requisições (projeto acadêmico)</li>
+<li>crescimento de dados incerto</li>
 </ul>
-<h2 id="2-opcoes-analisadas">2. Opções Analisadas</h2>
-<h3 id="21-hospedagem-local">2.1 Hospedagem Local</h3>
-<p><strong>Descrição:</strong></p>
+<hr />
+<h2 id="opcoes-analisadas">Opções analisadas</h2>
+<h3 id="hospedagem-local">Hospedagem local</h3>
 <p>Banco de dados executado na máquina de um integrante do grupo.</p>
-<p><strong>Vantagens:</strong></p>
+<h4 id="vantagens">Vantagens</h4>
 <ul>
-<li>Custo zero</li>
-<li>Simplicidade de configuração</li>
-<li>Bom para desenvolvimento inicial</li>
+<li>custo zero</li>
+<li>simplicidade de configuração</li>
+<li>bom para desenvolvimento inicial</li>
 </ul>
-<p><strong>Desvantagens:</strong></p>
+<h4 id="desvantagens">Desvantagens</h4>
 <ul>
-<li>Baixa disponibilidade (depende da máquina estar ligada)</li>
-<li>Acesso externo limitado</li>
-<li>Maior risco de perda de dados</li>
-<li>Difícil colaboração entre integrantes</li>
-<li>Não adequado para integração com frontend remoto</li>
+<li>baixa disponibilidade (depende da máquina estar ligada)</li>
+<li>acesso externo limitado</li>
+<li>maior risco de perda de dados</li>
+<li>difícil colaboração entre integrantes</li>
+<li>não adequado para integração com frontend remoto</li>
 </ul>
-<h3 id="22-hospedagem-em-nuvem-postgresql">2.2 Hospedagem em Nuvem (PostgreSQL)</h3>
-<p><strong>Descrição:</strong></p>
-<p>Banco de dados hospedado em um serviço cloud, acessível via internet.</p>
-<p><strong>Opções consideradas:</strong></p>
-<ul>
-<li>Neon (PostgreSQL serverless)</li>
-<li>Supabase (PostgreSQL + backend)</li>
-<li>AWS RDS (PostgreSQL gerenciado)</li>
-</ul>
-<h2 id="3-analise-tecnica-banco-sql-em-nuvem">3. Análise Técnica – Banco SQL em Nuvem</h2>
-<h3 id="31-caracteristicas-do-projeto">3.1 Características do Projeto</h3>
-<p>O banco de dados terá:</p>
-<ul>
-<li>menos de 10 tabelas relacionais</li>
-<li>Dados estruturados (sem arquivos pesados)</li>
-<li>Baixo volume de acessos simultâneos</li>
-<li>Uso acadêmico (não crítico)</li>
-</ul>
-<p>Isso implica:</p>
-<ul>
-<li>Baixo consumo de CPU</li>
-<li>Baixo consumo de armazenamento (inicialmente)</li>
-<li>Necessidade maior de simplicidade do que de escala</li>
-</ul>
-<h2 id="32-estimativa-de-uso-de-armazenamento">3.2 Estimativa de Uso de Armazenamento</h2>
-<p>O projeto irá consumir dados da <strong>API de projetos de lei da Câmara dos Deputados</strong>, filtrando aqueles relacionados à <strong>segurança da criança na internet</strong>.</p>
-<h3 id="estrutura-esperada-dos-dados">Estrutura esperada dos dados</h3>
-<p>Cada projeto de lei normalmente contém:</p>
-<ul>
-<li>ID</li>
-<li>Título (ementa)</li>
-<li>Descrição/ementa detalhada</li>
-<li>Texto/justificativa (às vezes longo)</li>
-<li>Autor(es)</li>
-<li>Data</li>
-<li>Situação</li>
-<li>Tags/temas</li>
-</ul>
-<p>Isso significa que os registros não são pequenos — principalmente por causa de <strong>campos de texto</strong>.</p>
-<h3 id="estimativa-por-registro">Estimativa por registro</h3>
+<hr />
+<h3 id="hospedagem-em-nuvem">Hospedagem em nuvem</h3>
+<p>Banco de dados hospedado em um serviço cloud, acessível via internet. Opções consideradas: Neon, Supabase e AWS RDS.</p>
+<hr />
+<h2 id="analise-tecnica">Análise técnica</h2>
+<h3 id="caracteristicas-do-projeto">Características do projeto</h3>
+<p>O banco terá menos de 10 tabelas relacionais, dados estruturados sem arquivos pesados, baixo volume de acessos simultâneos e uso acadêmico não crítico. Isso implica baixo consumo de CPU e armazenamento, com necessidade maior de simplicidade do que de escala.</p>
+<hr />
+<h3 id="estimativa-de-armazenamento">Estimativa de armazenamento</h3>
+<p>O projeto consumirá dados da API de projetos de lei da Câmara dos Deputados, filtrando os relacionados à segurança da criança na internet. Cada registro pode conter ID, título, ementa, texto/justificativa, autor, data, situação e temas.</p>
+<h4 id="estimativa-por-registro">Estimativa por registro</h4>
 <table>
 <thead>
 <tr>
@@ -249,15 +200,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Total por registro:</strong></p>
-<ul>
-<li>Conservador: ~3 KB</li>
-<li>Médio: ~5 KB</li>
-<li>Alto: ~10 KB</li>
-</ul>
-<h3 id="quantidade-estimada-de-dados">Quantidade estimada de dados</h3>
-<p>Nem todos os projetos da Câmara serão armazenados — apenas os relacionados ao tema.</p>
-<p>Estimativa realista:</p>
+<p>Total por registro: conservador ~3 KB, médio ~5 KB, alto ~10 KB.</p>
+<h4 id="quantidade-estimada-de-dados">Quantidade estimada de dados</h4>
 <table>
 <thead>
 <tr>
@@ -270,7 +214,7 @@
 <tr>
 <td>Pequeno</td>
 <td>500</td>
-<td>~2.5 MB</td>
+<td>~2,5 MB</td>
 </tr>
 <tr>
 <td>Médio</td>
@@ -283,125 +227,51 @@
 <td>~50 MB</td>
 </tr>
 <tr>
-<td>Muito grande (exagerado)</td>
+<td>Muito grande</td>
 <td>50.000</td>
 <td>~250 MB</td>
 </tr>
 </tbody>
 </table>
-<h3 id="consideracoes-importantes">Considerações importantes</h3>
+<p>O número de projetos relacionados ao tema é limitado. Mesmo armazenando milhares de registros, o banco ficará bem abaixo de 0,5 GB, com crescimento lento e previsível.</p>
+<h4 id="fatores-de-risco">Fatores de risco</h4>
+<p>O tamanho pode crescer significativamente caso o sistema armazene o texto completo dos projetos, histórico de versões ou dados redundantes da API sem filtro.</p>
+<h4 id="estrategias-para-otimizar-armazenamento">Estratégias para otimizar armazenamento</h4>
 <ul>
-<li>O número de projetos relacionados ao tema é <strong>limitado</strong></li>
-<li>Mesmo armazenando milhares de registros:<ul>
-<li>ainda fica <strong>bem abaixo de 0.5 GB</strong></li>
-</ul>
-</li>
-<li>O crescimento é <strong>lento e previsível</strong></li>
-</ul>
-<h3 id="possivel-fator-de-risco">Possível fator de risco</h3>
-<p>O único cenário que pode aumentar muito o tamanho:</p>
-<ul>
-<li>Armazenar <strong>texto completo do projeto (inteiro)</strong></li>
-<li>Armazenar <strong>histórico de versões</strong></li>
-<li>Armazenar <strong>dados redundantes da API sem filtro</strong></li>
-</ul>
-<h3 id="estrategias-para-otimizar-armazenamento">Estratégias para otimizar armazenamento</h3>
-<ol>
-<li><strong>Armazenar apenas campos relevantes</strong><ul>
-<li>evitar duplicação de dados</li>
-</ul>
-</li>
-<li><strong>Evitar armazenar documentos completos desnecessariamente</strong><ul>
+<li>armazenar apenas campos relevantes, evitando duplicação</li>
 <li>salvar apenas resumo/ementa quando possível</li>
-</ul>
-</li>
-<li><strong>Normalização</strong><ul>
-<li>separar autores, temas, etc.</li>
-</ul>
-</li>
-<li><strong>Compressão lógica</strong><ul>
+<li>normalizar autores, temas, etc. em tabelas separadas</li>
 <li>usar <code>TEXT</code> (PostgreSQL já otimiza internamente)</li>
 </ul>
-</li>
-</ol>
-<h3 id="conclusao-da-estimativa">Conclusão da estimativa</h3>
-<p>Mesmo considerando dados reais da Câmara:</p>
-<blockquote>
-<p>O banco de dados provavelmente ficará entre <strong>5 MB e 100 MB</strong> na maioria dos cenários.
-</p>
-</blockquote>
-<p>Ou seja:</p>
+<h4 id="conclusao-da-estimativa">Conclusão da estimativa</h4>
+<p>O banco de dados provavelmente ficará entre <strong>5 MB e 100 MB</strong> na maioria dos cenários — bem abaixo do limite de 500 MB, com margem de segurança confortável.</p>
+<hr />
+<h3 id="opcoes-em-nuvem">Opções em nuvem</h3>
+<h4 id="neon-postgresql-serverless">Neon (PostgreSQL serverless)</h4>
 <ul>
-<li>Muito abaixo do limite de <strong>0.5 GB (500 MB)</strong></li>
-<li>Com margem de segurança confortável</li>
+<li>plano gratuito: 0,5 GB de armazenamento, compute limitado, escala para zero quando ocioso</li>
+<li>custo adicional: ~$0,35 por GB extra/mês</li>
+<li>vantagens: custo inicial zero, escalabilidade automática, PostgreSQL puro, ideal para uso intermitente</li>
+<li>desvantagens: possível latência inicial (cold start), limite inicial de armazenamento</li>
 </ul>
-<h2 id="33-opcoes-em-nuvem">3.3 Opções em Nuvem</h2>
-<h3 id="neon-postgresql-serverless">🔹 Neon (PostgreSQL Serverless)</h3>
-<p><strong>Plano gratuito:</strong></p>
+<hr />
+<h4 id="supabase">Supabase</h4>
 <ul>
-<li>0.5 GB armazenamento</li>
-<li>Compute limitado</li>
-<li>Escala para zero (sem custo quando ocioso)</li>
+<li>plano gratuito: ~500 MB de banco</li>
+<li>plano pago: ~$25/mês</li>
+<li>vantagens: fácil integração, inclui autenticação e backend prontos</li>
+<li>desvantagens: menos controle, custo fixo mais alto ao escalar, pode ser excessivo para o escopo do projeto</li>
 </ul>
-<p><strong>Custos adicionais:</strong></p>
+<hr />
+<h4 id="aws-rds">AWS RDS</h4>
 <ul>
-<li>~$0.35 por GB extra/mês</li>
+<li>plano: ~750h gratuitas por 1 ano, ~20 GB de armazenamento</li>
+<li>após free tier: ~$10–15/mês mínimo</li>
+<li>vantagens: alta confiabilidade, controle total, padrão de mercado</li>
+<li>desvantagens: configuração mais complexa, custo maior desde o início, não escala para zero</li>
 </ul>
-<p><strong>Vantagens:</strong></p>
-<ul>
-<li>Custo inicial zero</li>
-<li>Escalabilidade automática</li>
-<li>PostgreSQL puro (sem lock-in)</li>
-<li>Ideal para uso intermitente</li>
-</ul>
-<p><strong>Desvantagens:</strong></p>
-<ul>
-<li>Possível latência inicial (cold start)</li>
-<li>Limite inicial de armazenamento</li>
-</ul>
-<h3 id="supabase">Supabase</h3>
-<p><strong>Plano gratuito:</strong></p>
-<ul>
-<li>~500 MB banco</li>
-</ul>
-<p><strong>Plano pago:</strong></p>
-<ul>
-<li>~$25/mês</li>
-</ul>
-<p><strong>Vantagens:</strong></p>
-<ul>
-<li>Fácil integração (API pronta)</li>
-<li>Inclui autenticação e backend</li>
-</ul>
-<p><strong>Desvantagens:</strong></p>
-<ul>
-<li>Menos controle</li>
-<li>Custo fixo mais alto ao escalar</li>
-<li>Pode ser excessivo para o escopo do projeto</li>
-</ul>
-<h3 id="aws-rds">AWS RDS</h3>
-<p><strong>Plano:</strong></p>
-<ul>
-<li>~750h gratuitas por 1 ano</li>
-<li>~20 GB armazenamento</li>
-</ul>
-<p><strong>Após free tier:</strong></p>
-<ul>
-<li>~$10–15/mês mínimo</li>
-</ul>
-<p><strong>Vantagens:</strong></p>
-<ul>
-<li>Alta confiabilidade</li>
-<li>Controle total</li>
-<li>Padrão de mercado</li>
-</ul>
-<p><strong>Desvantagens:</strong></p>
-<ul>
-<li>Configuração mais complexa</li>
-<li>Custo maior desde o início</li>
-<li>Não escala para zero</li>
-</ul>
-<h2 id="34-comparacao">3.4 Comparação</h2>
+<hr />
+<h3 id="comparacao">Comparação</h3>
 <table>
 <thead>
 <tr>
@@ -420,12 +290,12 @@
 </tr>
 <tr>
 <td>Armazenamento</td>
-<td>0.5 GB</td>
-<td>~0.5 GB</td>
+<td>0,5 GB</td>
+<td>~0,5 GB</td>
 <td>20 GB</td>
 </tr>
 <tr>
-<td>Escala p/ zero</td>
+<td>Escala para zero</td>
 <td>Sim</td>
 <td>Não</td>
 <td>Não</td>
@@ -443,91 +313,48 @@
 <td>Alto</td>
 </tr>
 <tr>
-<td>Indicado p/</td>
+<td>Indicado para</td>
 <td>Acadêmico/MVP</td>
 <td>MVP completo</td>
 <td>Produção</td>
 </tr>
 </tbody>
 </table>
-<h2 id="4-analise-de-risco">4. Análise de Risco</h2>
-<h3 id="risco-identificado">Risco identificado</h3>
+<hr />
+<h2 id="analise-de-risco">Análise de risco</h2>
+<p>O principal risco identificado é o crescimento do banco além de 0,5 GB. A probabilidade é baixa, considerando as poucas tabelas, dados estruturados e baixo volume de uso. O custo adicional por armazenamento extra é pequeno e a migração é simples por se tratar de PostgreSQL padrão.</p>
+<p>Mitigações:</p>
 <ul>
-<li>Crescimento do banco além de <strong>0.5 GB</strong></li>
+<li>monitorar tamanho do banco periodicamente</li>
+<li>limpar dados desnecessários (logs, temporários)</li>
+<li>migrar ou escalar caso necessário</li>
 </ul>
-<h3 id="probabilidade">Probabilidade</h3>
+<hr />
+<h2 id="decisao-final">Decisão final</h2>
+<p><strong>PostgreSQL em nuvem via Neon.</strong></p>
+<h3 id="justificativa">Justificativa</h3>
 <ul>
-<li><strong>Baixa</strong>, considerando:<ul>
-<li>Poucas tabelas</li>
-<li>Dados estruturados</li>
-<li>Baixo volume de uso</li>
+<li>custo zero inicial, ideal para projeto acadêmico</li>
+<li>baixa complexidade de configuração e uso</li>
+<li>escalabilidade adequada ao crescimento do projeto</li>
+<li>não cobra quando o sistema está ocioso</li>
+<li>flexibilidade para migrar facilmente para outras soluções PostgreSQL caso necessário</li>
 </ul>
-</li>
-</ul>
-<p>Motivo:</p>
+<h3 id="estrategia-de-uso">Estratégia de uso</h3>
 <ul>
-<li>O custo adicional é muito pequeno</li>
-<li>Migração é simples (PostgreSQL padrão)</li>
+<li><strong>desenvolvimento local</strong> — PostgreSQL local ou Docker</li>
+<li><strong>integração e testes</strong> — Neon</li>
+<li><strong>produção acadêmica</strong> — Neon</li>
 </ul>
-<h3 id="mitigacoes">Mitigações</h3>
-<ol>
-<li><strong>Monitorar tamanho do banco</strong></li>
-<li><strong>Limpar dados desnecessários (logs, temporários)</strong></li>
-<li><strong>Migrar ou escalar caso necessário</strong></li>
-</ol>
-<h2 id="5-decisao-final">5. Decisão Final</h2>
-<p><strong>Escolha:</strong> PostgreSQL em nuvem utilizando <strong>Neon</strong></p>
-<h2 id="6-justificativa">6. Justificativa</h2>
-<p>A decisão foi baseada nos seguintes pontos:</p>
-<ol>
-<li><strong>Custo zero inicial</strong><ul>
-<li>Ideal para projeto acadêmico</li>
-</ul>
-</li>
-<li><strong>Baixa complexidade</strong><ul>
-<li>Fácil de configurar e usar</li>
-</ul>
-</li>
-<li><strong>Escalabilidade adequada</strong><ul>
-<li>Cresce conforme necessário</li>
-</ul>
-</li>
-<li><strong>Uso eficiente para baixa demanda</strong><ul>
-<li>Não cobra quando o sistema está ocioso</li>
-</ul>
-</li>
-<li><strong>Flexibilidade futura</strong><ul>
-<li>Pode migrar facilmente para outras soluções PostgreSQL</li>
-</ul>
-</li>
-</ol>
-<h2 id="7-estrategia-de-uso">7. Estratégia de Uso</h2>
+<h3 id="plano-de-contingencia">Plano de contingência</h3>
+<p>Caso o banco ultrapasse os limites ou surjam novas necessidades:</p>
 <ul>
-<li><strong>Desenvolvimento local:</strong> PostgreSQL local (ou Docker)</li>
-<li><strong>Integração e testes:</strong> Neon</li>
-<li><strong>Produção acadêmica:</strong> Neon</li>
+<li>expandir armazenamento no Neon (baixo custo)</li>
+<li>ou migrar para Supabase (mais recursos) ou AWS RDS (maior robustez)</li>
 </ul>
-<h2 id="8-plano-de-contingencia">8. Plano de Contingência</h2>
-<p>Caso o banco ultrapasse limites ou surjam novas necessidades:</p>
-<ul>
-<li>Expandir armazenamento (baixo custo)</li>
-<li>Ou migrar para:<ul>
-<li>Supabase (mais recursos)</li>
-<li>AWS RDS (maior robustez)</li>
-</ul>
-</li>
-</ul>
-<h2 id="9-conclusao">9. Conclusão</h2>
-<p>Para um projeto acadêmico com:</p>
-<ul>
-<li>Poucas tabelas</li>
-<li>Baixo volume de requisições</li>
-<li>Crescimento incerto</li>
-</ul>
-<blockquote>
-<p>A utilização de PostgreSQL em nuvem via Neon oferece o melhor equilíbrio entre <strong>custo, simplicidade e escalabilidade</strong>.
-</p>
-</blockquote></div>
+<hr />
+<h2 id="conclusao">Conclusão</h2>
+<p>Para um projeto acadêmico com poucas tabelas, baixo volume de requisições e crescimento incerto, o PostgreSQL em nuvem via Neon oferece o melhor equilíbrio entre custo, simplicidade e escalabilidade.</p></div>
             </div>
         </div>
 
@@ -535,8 +362,7 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -549,7 +375,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -569,7 +395,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">

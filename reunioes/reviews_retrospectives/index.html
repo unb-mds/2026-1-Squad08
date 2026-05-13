@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,15 @@
         <meta name="author" content="Equipe do Projeto">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>30/03 - Monitoramento Legislativo – Proteção de Crianças na Internet</title>
+        <title>Review e Retrospectiva das Sprints - Monitoramento Legislativo – Proteção de Crianças na Internet</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="../..">Monitoramento Legislativo – Proteção de Crianças na Internet</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,50 +34,50 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../projeto/" class="nav-link">Projeto</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/arquitetura/" class="nav-link">Arquitetura</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/API/" class="nav-link">Backend / API</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/banco_de_dados/" class="nav-link">Banco de Dados</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/frontend/" class="nav-link">Frontend</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/design/" class="nav-link">Design</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../estudos/git_github/" class="nav-link">Git & Organização</a>
+                            <li class="nav-item">
+                                <a href="../../estudos/git_github/" class="nav-link">Git / GitHub</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/metodos_ageis/" class="nav-link">Metodologia</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../" class="nav-link">Gestão</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../padrao_organizacao/" class="nav-link">Padrões</a>
+                            <li class="nav-item">
+                                <a href="../../padrao_organizacao/" class="nav-link">Padrão / Organização</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/requisitos/" class="nav-link">Requisitos</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/inteligencia_artificial/" class="nav-link">Inteligência Artificial</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -84,84 +88,47 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#3003" class="nav-link">30/03</a>
+            <li class="nav-item" data-bs-level="1"><a href="#review-e-retrospectiva-das-sprints" class="nav-link">Review e Retrospectiva das Sprints</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#3003-sprint-0" class="nav-link">30/03 — Sprint 0</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#review-e-retrospectiva-sprint-0" class="nav-link">Review e Retrospectiva Sprint 0</a>
+            <li class="nav-item" data-bs-level="2"><a href="#0604-sprint-1" class="nav-link">06/04 — Sprint 1</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#0604" class="nav-link">06/04</a>
+            <li class="nav-item" data-bs-level="2"><a href="#1304-sprint-2" class="nav-link">13/04 — Sprint 2</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#review-e-retrospectiva-da-sprint-1" class="nav-link">Review e Retrospectiva da Sprint 1</a>
+            <li class="nav-item" data-bs-level="2"><a href="#2004-sprint-3" class="nav-link">20/04 — Sprint 3</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#1304" class="nav-link">13/04</a>
+            <li class="nav-item" data-bs-level="2"><a href="#2704-sprint-4" class="nav-link">27/04 — Sprint 4</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#review-e-retrospectiva-da-sprint-2" class="nav-link">Review e Retrospectiva da Sprint 2</a>
+            <li class="nav-item" data-bs-level="2"><a href="#0405-sprint-5" class="nav-link">04/05 — Sprint 5</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#2004" class="nav-link">20/04</a>
+            <li class="nav-item" data-bs-level="2"><a href="#1105-sprint-6" class="nav-link">11/05 — Sprint 6</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#review-e-retrospectiva-da-sprint-3" class="nav-link">Review e Retrospectiva da Sprint 3</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#2704" class="nav-link">27/04</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#review-e-retrospectiva-da-sprint-4" class="nav-link">Review e Retrospectiva da Sprint 4</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#0405" class="nav-link">04/05</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#review-e-retrospectiva-da-sprint-5" class="nav-link">Review e Retrospectiva da Sprint 5</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#1105" class="nav-link">11/05</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#review-e-retrospectiva-da-sprint-6" class="nav-link">Review e Retrospectiva da Sprint 6</a>
-              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -169,52 +136,62 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="3003">30/03</h1>
-<h1 id="review-e-retrospectiva-sprint-0">Review e Retrospectiva Sprint 0</h1>
-<p>Conseguimos resolver todas Issues, menos o Estudo de Front-End.<br />
-Vimos que o Estudo de GitHub foi feito, mas o documento produzido ficou ruim para os outros integrantes, 
-então o Arthur ficou responsável de refazê-lo.  </p>
+<h1 id="review-e-retrospectiva-das-sprints">Review e Retrospectiva das Sprints</h1>
 <hr />
-<h1 id="0604">06/04</h1>
-<h1 id="review-e-retrospectiva-da-sprint-1">Review e Retrospectiva da Sprint 1</h1>
-<p>Vimos que nossa organização não estava boa, então decidimos que iríamos fazer diferente na próxima.<br />
-Visando melhora, definimos Caio como Product Owner, e Renan como Scrum Master.  </p>
+<h2 id="3003-sprint-0">30/03 — Sprint 0</h2>
+<p>Conseguimos resolver todas as issues, exceto o estudo de Front-End.</p>
+<p>O estudo de GitHub foi realizado, porém o documento produzido não ficou adequado para os demais integrantes, então o Arthur ficou responsável por refazê-lo.</p>
 <hr />
-<h1 id="1304">13/04</h1>
-<h1 id="review-e-retrospectiva-da-sprint-2">Review e Retrospectiva da Sprint 2</h1>
-<p>Conseguimos resolver todas Issues a tempo.</p>
-<p>Reforçamos que devemos commitar TUDO que der, para deixarmos rastros, até de nossos estudos e escolhas.</p>
-<p>Decidimos mudar as Dailies pra 3 vezes na semana, 2 vezes online e 1 por texto, pra aumentar a produtividade (ainda estamos em fase de teste).</p>
-<p>Discutimos sobre Labels S M L - separar tarefas contando o tamanho, mas ainda não decidimos nada.</p>
-<h1 id="2004">20/04</h1>
-<h1 id="review-e-retrospectiva-da-sprint-3">Review e Retrospectiva da Sprint 3</h1>
-<p>Presentes: Arthur, Caio, Ítalo, Luis e Renan.  </p>
-<p>Todos mostraram o que fizeram durante a semana, para interar os integrantes sobre o andamento do projeto.  </p>
-<p>Mudamos nossas Review e Retrospectiva para as segundas-feiras, após a aula de MDS, e logo após acontecerá a Sprint Planning.<br />
-Mudamos nossas Dailies para as quartas-feiras, após a aula de MDS, e as sextas-feiras, às 13 horas.  </p>
-<h1 id="2704">27/04</h1>
-<h1 id="review-e-retrospectiva-da-sprint-4">Review e Retrospectiva da Sprint 4</h1>
-<p>Presentes: Caio, Ítalo, Luís e Renan<br />
-Mostramos tudo o que foi entregue nessa semana.<br />
-Criar um Protótipo Interativo do site design Identidade visual e UX -&gt; levado para a Sprint 5, pois não foi concluído ainda.<br />
-Implementar banco de dados -&gt; levado para a Sprint 5, pois não houve tempo para os integrantes se dedicarem a isso.<br />
-Ninguém enfrentou um problema grande. As mudanças nas cerimônias Scrum surtiram efeito positivo. </p>
-<h1 id="0405">04/05</h1>
-<h1 id="review-e-retrospectiva-da-sprint-5">Review e Retrospectiva da Sprint 5</h1>
-<p>Presentes: Arthur, Caio, Luís e Renan</p>
-<p>Arthur: ajudou no Protótipo interativo, deverá acabar a issue de Estudo de IA até terça a noite. </p>
-<p>Caio: finalizou a issue de Protótipo Interativo, e apenas está esperando um reviewer no Pull Request de revisão de Requisitos </p>
-<p>Luís: não acabou sua issue, mas deverá acabar até terça à noite. </p>
-<p>Renan: entregou a issue de fix de pastas, MK Docs, e revisão de Arqutitetura (com 3 sub-issues). </p>
-<p>Entregamos muito pouco nessa Sprint, e devemos prestar mais atenção para as Reviews em PR’s, para ajudar numa entrega de alto nível. </p>
-<h1 id="1105">11/05</h1>
-<h1 id="review-e-retrospectiva-da-sprint-6">Review e Retrospectiva da Sprint 6</h1>
-<p>Presentes: Arthur, Caio, Luís e Renan</p>
-<p>Arthur: entregou estrutura base do Front-end.</p>
-<p>Caio: entregou estrutura base do Front-End, e revisou os Requisitos do projeto.</p>
-<p>Luís: entregou melhores filtros da API da câmara.</p>
-<p>Renan: evoluiu nos estudos do Banco de Dados, mas concluiu 2 das 6 issues.</p>
-<p>Precisamos melhorar na divisão de tarefas, para aumentar nossa produtividade.</p></div>
+<h2 id="0604-sprint-1">06/04 — Sprint 1</h2>
+<p>Foi identificada uma organização inicial inadequada no processo do time.</p>
+<p>Como melhoria, foram definidos:
+- Caio como Product Owner
+- Renan como Scrum Master</p>
+<hr />
+<h2 id="1304-sprint-2">13/04 — Sprint 2</h2>
+<p>Conseguimos resolver todas as issues dentro do prazo.</p>
+<p>Foi reforçada a importância de realizar commits de todas as atividades possíveis, incluindo estudos e decisões técnicas, para manter rastreabilidade do projeto.</p>
+<p>Foi proposta a mudança no formato das dailies para três vezes por semana:
+- duas online
+- uma por texto</p>
+<p>(implementação em fase de teste)</p>
+<p>Também foi discutida a adoção de labels de tamanho (S, M, L), porém sem definição final.</p>
+<hr />
+<h2 id="2004-sprint-3">20/04 — Sprint 3</h2>
+<p>Presentes: Arthur, Caio, Ítalo, Luis e Renan</p>
+<p>Todos apresentaram suas atividades da semana para alinhamento do andamento do projeto.</p>
+<p>Foram definidas mudanças no processo Scrum:
+- Reviews e Retrospectivas passam para segunda-feira após aula de MDS
+- Sprint Planning ocorre logo em seguida
+- Dailies passam para quarta-feira após aula de MDS e sexta-feira às 13h</p>
+<hr />
+<h2 id="2704-sprint-4">27/04 — Sprint 4</h2>
+<p>Presentes: Caio, Ítalo, Luis e Renan</p>
+<p>Foram apresentados os entregáveis da semana.</p>
+<p>Issues não concluídas e movidas para Sprint 5:
+- Protótipo interativo (design, identidade visual e UX)
+- Implementação do banco de dados</p>
+<p>Nenhum problema crítico foi identificado. As mudanças no processo Scrum tiveram efeito positivo.</p>
+<hr />
+<h2 id="0405-sprint-5">04/05 — Sprint 5</h2>
+<p>Presentes: Arthur, Caio, Luis e Renan</p>
+<ul>
+<li>Arthur: contribuiu com protótipo interativo e continuará estudo de IA até terça-feira  </li>
+<li>Caio: finalizou protótipo interativo e aguarda review de PR de requisitos  </li>
+<li>Luis: issue ainda não concluída, previsão de finalização até terça-feira  </li>
+<li>Renan: entregou fix de pastas, MkDocs e revisão de arquitetura (3 sub-issues)  </li>
+</ul>
+<p>Foi identificado baixo volume de entregas na sprint e necessidade de maior atenção aos Pull Requests para garantir qualidade nas entregas.</p>
+<hr />
+<h2 id="1105-sprint-6">11/05 — Sprint 6</h2>
+<p>Presentes: Arthur, Caio, Luis e Renan</p>
+<ul>
+<li>Arthur: entregou estrutura base do front-end  </li>
+<li>Caio: entregou estrutura base do front-end e revisou requisitos do projeto  </li>
+<li>Luis: melhorou filtros da API da Câmara  </li>
+<li>Renan: avançou nos estudos de banco de dados, concluindo 2 de 6 issues  </li>
+</ul>
+<p>Foi identificada necessidade de melhoria na divisão de tarefas para aumento de produtividade do time.</p></div>
             </div>
         </div>
 
@@ -222,8 +199,7 @@ Ninguém enfrentou um problema grande. As mudanças nas cerimônias Scrum surtir
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -236,7 +212,7 @@ Ninguém enfrentou um problema grande. As mudanças nas cerimônias Scrum surtir
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -256,7 +232,7 @@ Ninguém enfrentou um problema grande. As mudanças nas cerimônias Scrum surtir
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">

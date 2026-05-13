@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,15 @@
         <meta name="author" content="Equipe do Projeto">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Documentação de Visão - Monitoramento Legislativo – Proteção de Crianças na Internet</title>
+        <title>Visão do Produto - Monitoramento Legislativo – Proteção de Crianças na Internet</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="../..">Monitoramento Legislativo – Proteção de Crianças na Internet</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,50 +34,50 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../" class="nav-link">Projeto</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/arquitetura/" class="nav-link">Arquitetura</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/API/" class="nav-link">Backend / API</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/banco_de_dados/" class="nav-link">Banco de Dados</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/frontend/" class="nav-link">Frontend</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/design/" class="nav-link">Design</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../estudos/git_github/" class="nav-link">Git & Organização</a>
+                            <li class="nav-item">
+                                <a href="../../estudos/git_github/" class="nav-link">Git / GitHub</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/metodos_ageis/" class="nav-link">Metodologia</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../reunioes/" class="nav-link">Gestão</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../padrao_organizacao/" class="nav-link">Padrões</a>
+                            <li class="nav-item">
+                                <a href="../../padrao_organizacao/" class="nav-link">Padrão / Organização</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/requisitos/" class="nav-link">Requisitos</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../estudos/inteligencia_artificial/" class="nav-link">Inteligência Artificial</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -84,68 +88,36 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#documentacao-de-visao" class="nav-link">Documentação de Visão</a>
+            <li class="nav-item" data-bs-level="1"><a href="#visao-do-produto" class="nav-link">Visão do Produto</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#nome-da-iniciativa" class="nav-link">Nome da Iniciativa</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#1-visao-geral-do-produto" class="nav-link">1. Visão Geral do Produto</a>
+            <li class="nav-item" data-bs-level="2"><a href="#visao-geral" class="nav-link">Visão geral</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#2-problema-oportunidade" class="nav-link">2. Problema / Oportunidade</a>
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#3-objetivo-estrategico" class="nav-link">3. Objetivo Estratégico</a>
+            <li class="nav-item" data-bs-level="2"><a href="#conteudo-principal" class="nav-link">Conteúdo principal</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#4-publico-alvo" class="nav-link">4. Público-Alvo</a>
+            <li class="nav-item" data-bs-level="2"><a href="#referencias" class="nav-link">Referências</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#5-escopo-do-produto" class="nav-link">5. Escopo do Produto</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#6-diferenciais-do-produto" class="nav-link">6. Diferenciais do Produto</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#7-arquitetura-conceitual" class="nav-link">7. Arquitetura Conceitual</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#8-riscos-e-premissas" class="nav-link">8. Riscos e Premissas</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#9-metricas-de-sucesso-kpis" class="nav-link">9. Métricas de Sucesso (KPIs)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#10-roadmap-inicial" class="nav-link">10. Roadmap Inicial</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#11-impacto-esperado" class="nav-link">11. Impacto Esperado</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#12-declaracao-final-de-visao" class="nav-link">12. Declaração Final de Visão</a>
+            <li class="nav-item" data-bs-level="2"><a href="#visao-final" class="nav-link">Visão final</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -156,203 +128,188 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="documentacao-de-visao">Documentação de Visão</h1>
-<h2 id="nome-da-iniciativa">Nome da Iniciativa</h2>
-<p><strong>Monitoramento Legislativo – Proteção de Crianças na Internet</strong></p>
-<hr />
-<h2 id="1-visao-geral-do-produto">1. Visão Geral do Produto</h2>
-<p>A plataforma <strong>Monitoramento Legislativo – Proteção de Crianças na Internet</strong> é um sistema digital voltado ao acompanhamento, classificação e análise de proposições legislativas relacionadas à proteção de crianças e adolescentes no ambiente digital.</p>
-<p>O sistema permitirá monitorar projetos de lei, emendas, pareceres e tramitações que tratem de temas como:</p>
+<h1 id="visao-do-produto">Visão do Produto</h1>
+<h2 id="visao-geral">Visão geral</h2>
+<p>A iniciativa Monitoramento Legislativo – Proteção de Crianças na Internet é um sistema digital voltado ao acompanhamento, classificação e análise de proposições legislativas relacionadas à proteção de crianças e adolescentes no ambiente digital.</p>
+<p>O sistema permite monitorar projetos de lei, emendas, pareceres e tramitações que tratem de temas como:</p>
 <ul>
-<li>Cyberbullying</li>
-<li>Exploração sexual online</li>
-<li>Proteção de dados de menores</li>
-<li>Regulação de plataformas digitais</li>
-<li>Exposição a conteúdo nocivo</li>
+<li>Cyberbullying  </li>
+<li>Exploração sexual online  </li>
+<li>Proteção de dados de menores  </li>
+<li>Regulação de plataformas digitais  </li>
+<li>Exposição a conteúdo nocivo  </li>
 </ul>
-<p>A plataforma será orientada por dados públicos oficiais provenientes de casas legislativas como a Câmara dos Deputados e o Senado Federal, com categorização temática automatizada e geração de análises estratégicas.</p>
+<p>A plataforma é orientada por dados públicos oficiais provenientes de casas legislativas como a Câmara dos Deputados e o Senado Federal, com categorização temática automatizada e geração de análises estratégicas.</p>
 <hr />
-<h2 id="2-problema-oportunidade">2. Problema / Oportunidade</h2>
+<h2 id="objetivo">Objetivo</h2>
+<p>Criar uma plataforma centralizada que:</p>
+<ul>
+<li>Consolide proposições legislativas relevantes  </li>
+<li>Classifique automaticamente por tema  </li>
+<li>Permita análise temporal e comparativa  </li>
+<li>Apoie pesquisadores, ONGs, instituições educacionais e formuladores de políticas públicas  </li>
+</ul>
+<hr />
+<h2 id="conteudo-principal">Conteúdo principal</h2>
 <h3 id="problema">Problema</h3>
 <p>Atualmente:</p>
 <ul>
-<li>Projetos legislativos são dispersos em diferentes portais públicos</li>
-<li>Não há categorização temática focada especificamente na proteção digital de crianças</li>
-<li>Organizações da sociedade civil têm dificuldade em acompanhar tramitações relevantes</li>
-<li>Falta análise consolidada de tendências legislativas</li>
+<li>Projetos legislativos estão dispersos em diferentes portais públicos  </li>
+<li>Não há categorização temática específica para proteção digital de crianças  </li>
+<li>Organizações da sociedade civil têm dificuldade em acompanhar tramitações relevantes  </li>
+<li>Falta análise consolidada de tendências legislativas  </li>
 </ul>
-<p>Isso gera:</p>
+<p>Isso resulta em:</p>
 <ul>
-<li>Baixa capacidade de advocacy estruturado</li>
-<li>Reação tardia a propostas com impacto social relevante</li>
-<li>Dificuldade de articulação institucional</li>
+<li>Baixa capacidade de advocacy estruturado  </li>
+<li>Reação tardia a propostas com impacto social relevante  </li>
+<li>Dificuldade de articulação institucional  </li>
 </ul>
 <hr />
-<h2 id="3-objetivo-estrategico">3. Objetivo Estratégico</h2>
-<p>Criar uma plataforma centralizada que:</p>
+<h3 id="publico-alvo">Público-alvo</h3>
+<p><strong>Primário:</strong></p>
 <ul>
-<li>Consolide proposições legislativas relevantes</li>
-<li>Classifique automaticamente por tema</li>
-<li>Permita análise temporal e comparativa</li>
-<li>Apoie pesquisadores, ONGs, escolas e formuladores de políticas públicas</li>
+<li>ONGs de proteção à infância  </li>
+<li>Pesquisadores em direito digital  </li>
+<li>Instituições educacionais  </li>
+<li>Organizações de advocacy  </li>
+</ul>
+<p><strong>Secundário:</strong></p>
+<ul>
+<li>Jornalistas  </li>
+<li>Assessores parlamentares  </li>
+<li>Órgãos públicos  </li>
+<li>Estudantes de Direito e Políticas Públicas  </li>
 </ul>
 <hr />
-<h2 id="4-publico-alvo">4. Público-Alvo</h2>
-<h3 id="primario">Primário</h3>
+<h3 id="escopo-do-produto">Escopo do produto</h3>
+<h4 id="monitoramento-automatizado">Monitoramento automatizado</h4>
 <ul>
-<li>ONGs de proteção à infância</li>
-<li>Pesquisadores em direito digital</li>
-<li>Instituições educacionais</li>
-<li>Organizações de advocacy</li>
+<li>Coleta automática via API ou scraping autorizado  </li>
+<li>Atualização periódica de proposições  </li>
+<li>Identificação de tramitações relevantes  </li>
 </ul>
-<h3 id="secundario">Secundário</h3>
-<ul>
-<li>Jornalistas</li>
-<li>Assessores parlamentares</li>
-<li>Órgãos públicos</li>
-<li>Estudantes de Direito e Políticas Públicas</li>
-</ul>
-<hr />
-<h2 id="5-escopo-do-produto">5. Escopo do Produto</h2>
-<h3 id="51-monitoramento-automatizado">5.1 Monitoramento Automatizado</h3>
-<ul>
-<li>Coleta automática via API ou scraping autorizado</li>
-<li>Atualização periódica de novas proposições</li>
-<li>Identificação de tramitações relevantes</li>
-</ul>
-<h3 id="52-classificacao-tematica-inteligente">5.2 Classificação Temática Inteligente</h3>
+<h4 id="classificacao-tematica">Classificação temática</h4>
 <p>Classificação baseada em IA/NLP nas seguintes categorias:</p>
 <ul>
-<li>Cyberbullying</li>
-<li>Exploração sexual infantil online</li>
-<li>Proteção de dados de menores (conectado à Lei Geral de Proteção de Dados)</li>
-<li>Responsabilidade de plataformas (relacionado ao Marco Civil da Internet)</li>
-<li>Direitos previstos no Estatuto da Criança e do Adolescente</li>
+<li>Cyberbullying  </li>
+<li>Exploração sexual infantil online  </li>
+<li>Proteção de dados de menores  </li>
+<li>Responsabilidade de plataformas digitais  </li>
+<li>Direitos do Estatuto da Criança e do Adolescente  </li>
 </ul>
-<p><strong>Critérios:</strong></p>
+<p>Critérios:</p>
 <ul>
-<li>Classificação automática</li>
-<li>Revisão manual opcional</li>
-<li>Marcação por múltiplos temas</li>
+<li>Classificação automática  </li>
+<li>Revisão manual opcional  </li>
+<li>Marcação por múltiplos temas  </li>
 </ul>
-<h3 id="53-analise-e-visualizacao">5.3 Análise e Visualização</h3>
-<p><strong>Dashboard com:</strong></p>
+<h4 id="analise-e-visualizacao">Análise e visualização</h4>
+<p>Dashboard com:</p>
 <ul>
-<li>Quantidade de PLs por tema</li>
-<li>Evolução temporal</li>
-<li>Status de tramitação</li>
-<li>Parlamentares mais atuantes</li>
+<li>Quantidade de proposições por tema  </li>
+<li>Evolução temporal  </li>
+<li>Status de tramitação  </li>
+<li>Parlamentares mais atuantes  </li>
 </ul>
-<p><strong>Filtros por:</strong></p>
+<p>Filtros por:</p>
 <ul>
-<li>Ano</li>
-<li>Casa legislativa</li>
-<li>Autor</li>
-<li>Comissão</li>
+<li>Ano  </li>
+<li>Casa legislativa  </li>
+<li>Autor  </li>
+<li>Comissão  </li>
 </ul>
-<h3 id="54-alertas-inteligentes">5.4 Alertas Inteligentes</h3>
+<h4 id="alertas">Alertas</h4>
 <ul>
-<li>Alertas por e-mail ou notificação para:</li>
-<li>Novo projeto relacionado</li>
-<li>Mudança de status</li>
-<li>Aprovação em comissão</li>
+<li>Novos projetos relacionados  </li>
+<li>Mudança de status  </li>
+<li>Aprovação em comissão  </li>
 </ul>
-<h3 id="55-relatorios-estrategicos">5.5 Relatórios Estratégicos</h3>
+<h4 id="relatorios">Relatórios</h4>
 <ul>
-<li>Exportação em PDF</li>
-<li>Relatórios periódicos:</li>
-<li>Tendências legislativas</li>
-<li>Temas emergentes</li>
-<li>Comparação entre legislaturas</li>
+<li>Exportação em PDF  </li>
+<li>Tendências legislativas  </li>
+<li>Temas emergentes  </li>
+<li>Comparação entre legislaturas  </li>
 </ul>
 <hr />
-<h2 id="6-diferenciais-do-produto">6. Diferenciais do Produto</h2>
+<h3 id="diferenciais">Diferenciais</h3>
 <ul>
-<li>Foco exclusivo na proteção digital de crianças</li>
-<li>Classificação temática especializada</li>
-<li>Análise estratégica além da simples listagem de projetos</li>
-<li>Visualização consolidada em uma única plataforma</li>
+<li>Foco exclusivo na proteção digital de crianças  </li>
+<li>Classificação temática especializada  </li>
+<li>Análises além da simples listagem de projetos  </li>
+<li>Centralização de informações em uma única plataforma  </li>
 </ul>
 <hr />
-<h2 id="7-arquitetura-conceitual">7. Arquitetura Conceitual</h2>
-<h3 id="71-camadas-do-sistema">7.1 Camadas do Sistema</h3>
-<h4 id="camada-de-coleta">Camada de Coleta</h4>
+<h3 id="arquitetura-conceitual">Arquitetura conceitual</h3>
+<h4 id="coleta-de-dados">Coleta de dados</h4>
 <ul>
-<li>Integração com APIs públicas</li>
-<li>Processamento e normalização de dados</li>
+<li>Integração com APIs públicas  </li>
+<li>Normalização de dados  </li>
 </ul>
-<h4 id="camada-de-inteligencia">Camada de Inteligência</h4>
+<h4 id="inteligencia">Inteligência</h4>
 <ul>
-<li>NLP para classificação temática</li>
-<li>Sistema de palavras-chave e embeddings</li>
-<li>Motor de análise comparativa</li>
+<li>NLP para classificação temática  </li>
+<li>Palavras-chave e embeddings  </li>
+<li>Motor de análise comparativa  </li>
 </ul>
-<h4 id="camada-de-apresentacao">Camada de Apresentação</h4>
+<h4 id="apresentacao">Apresentação</h4>
 <ul>
-<li>Dashboard web responsivo</li>
-<li>Painel administrativo</li>
-<li>Sistema de alertas</li>
-</ul>
-<hr />
-<h2 id="8-riscos-e-premissas">8. Riscos e Premissas</h2>
-<h3 id="riscos">Riscos</h3>
-<ul>
-<li>Mudanças nas APIs legislativas</li>
-<li>Inconsistências nos dados públicos</li>
-<li>Classificação incorreta por IA</li>
-<li>Alto volume de dados históricos</li>
-</ul>
-<h3 id="mitigacoes">Mitigações</h3>
-<ul>
-<li>Versionamento de dados</li>
-<li>Validação manual amostral</li>
-<li>Atualização periódica do modelo</li>
-<li>Logs de auditoria</li>
+<li>Dashboard web responsivo  </li>
+<li>Painel administrativo  </li>
+<li>Sistema de alertas  </li>
 </ul>
 <hr />
-<h2 id="9-metricas-de-sucesso-kpis">9. Métricas de Sucesso (KPIs)</h2>
+<h3 id="riscos-e-premissas">Riscos e premissas</h3>
+<p><strong>Riscos:</strong></p>
 <ul>
-<li>Número de proposições monitoradas</li>
-<li>Taxa de classificação correta</li>
-<li>Número de usuários ativos</li>
-<li>Downloads de relatórios</li>
-<li>Tempo médio de atualização após nova tramitação</li>
+<li>Mudanças em APIs legislativas  </li>
+<li>Inconsistências em dados públicos  </li>
+<li>Classificação incorreta por modelos  </li>
+<li>Volume elevado de dados históricos  </li>
+</ul>
+<p><strong>Mitigações:</strong></p>
+<ul>
+<li>Versionamento de dados  </li>
+<li>Validação manual amostral  </li>
+<li>Atualização contínua de modelos  </li>
+<li>Logs de auditoria  </li>
 </ul>
 <hr />
-<h2 id="10-roadmap-inicial">10. Roadmap Inicial</h2>
-<h3 id="fase-1-mvp">Fase 1 – MVP</h3>
+<h3 id="metricas-de-sucesso">Métricas de sucesso</h3>
 <ul>
-<li>Monitoramento da Câmara dos Deputados</li>
-<li>Classificação básica por palavras-chave</li>
-<li>Dashboard simples com filtros</li>
-</ul>
-<h3 id="fase-2-expansao">Fase 2 – Expansão</h3>
-<ul>
-<li>Inclusão do Senado Federal</li>
-<li>Classificação com IA avançada</li>
-<li>Sistema de alertas personalizados</li>
-</ul>
-<h3 id="fase-3-inteligencia-estrategica">Fase 3 – Inteligência Estratégica</h3>
-<ul>
-<li>Análise de tendências legislativas</li>
-<li>Relatórios automatizados</li>
-<li>API pública da plataforma</li>
+<li>Número de proposições monitoradas  </li>
+<li>Taxa de classificação correta  </li>
+<li>Número de usuários ativos  </li>
+<li>Downloads de relatórios  </li>
+<li>Tempo de atualização de novas proposições  </li>
 </ul>
 <hr />
-<h2 id="11-impacto-esperado">11. Impacto Esperado</h2>
-<p>A plataforma permitirá:</p>
+<h3 id="roadmap">Roadmap</h3>
+<h4 id="fase-1-mvp">Fase 1 – MVP</h4>
 <ul>
-<li>Maior transparência legislativa</li>
-<li>Fortalecimento do controle social</li>
-<li>Atuação estratégica de ONGs</li>
-<li>Produção de dados qualificados para políticas públicas</li>
-<li>Antecipação de mudanças regulatórias relevantes</li>
+<li>Monitoramento da Câmara dos Deputados  </li>
+<li>Classificação por palavras-chave  </li>
+<li>Dashboard básico  </li>
+</ul>
+<h4 id="fase-2-expansao">Fase 2 – Expansão</h4>
+<ul>
+<li>Inclusão do Senado Federal  </li>
+<li>Classificação com IA  </li>
+<li>Sistema de alertas  </li>
+</ul>
+<h4 id="fase-3-inteligencia-estrategica">Fase 3 – Inteligência estratégica</h4>
+<ul>
+<li>Análise de tendências  </li>
+<li>Relatórios automatizados  </li>
+<li>API pública  </li>
 </ul>
 <hr />
-<h2 id="12-declaracao-final-de-visao">12. Declaração Final de Visão</h2>
-<blockquote>
-<p>Transformar dados legislativos dispersos em inteligência estratégica para proteger crianças e adolescentes no ambiente digital, fortalecendo a transparência, a responsabilidade institucional e o controle social.</p>
-</blockquote></div>
+<h2 id="referencias">Referências</h2>
+<p><em>(não aplicável neste documento)</em></p>
+<hr />
+<h2 id="visao-final">Visão final</h2>
+<p>Transformar dados legislativos dispersos em inteligência estratégica para proteger crianças e adolescentes no ambiente digital, fortalecendo transparência, responsabilidade institucional e controle social.</p></div>
             </div>
         </div>
 
@@ -360,8 +317,7 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -374,7 +330,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -394,7 +350,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">

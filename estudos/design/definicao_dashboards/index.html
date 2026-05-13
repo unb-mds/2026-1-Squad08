@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,13 @@
         <link rel="shortcut icon" href="../../../img/favicon.ico">
         <title>Definição de Dashboards do Sistema - Monitoramento Legislativo – Proteção de Crianças na Internet</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="../../..">Monitoramento Legislativo – Proteção de Crianças na Internet</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,50 +34,50 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../.." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../../projeto/" class="nav-link">Projeto</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../arquitetura/" class="nav-link">Arquitetura</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../API/" class="nav-link">Backend / API</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../banco_de_dados/" class="nav-link">Banco de Dados</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../frontend/" class="nav-link">Frontend</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../" class="nav-link">Design</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../git_github/" class="nav-link">Git & Organização</a>
+                            <li class="nav-item">
+                                <a href="../../git_github/" class="nav-link">Git / GitHub</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../metodos_ageis/" class="nav-link">Metodologia</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../../reunioes/" class="nav-link">Gestão</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../../padrao_organizacao/" class="nav-link">Padrões</a>
+                            <li class="nav-item">
+                                <a href="../../../padrao_organizacao/" class="nav-link">Padrão / Organização</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../requisitos/" class="nav-link">Requisitos</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../../inteligencia_artificial/" class="nav-link">Inteligência Artificial</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -84,84 +88,84 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#definicao-de-dashboards-do-sistema" class="nav-link">Definição de Dashboards do Sistema</a>
+            <li class="nav-item" data-bs-level="1"><a href="#definicao-de-dashboards-do-sistema" class="nav-link">Definição de Dashboards do Sistema</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#dashboards-selecionados" class="nav-link">Dashboards Selecionados</a>
+            <li class="nav-item" data-bs-level="1"><a href="#dashboards-selecionados" class="nav-link">Dashboards Selecionados</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#dashboard-1-panorama-geral-must" class="nav-link">Dashboard 1 — Panorama Geral (Must)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#dashboard-1-panorama-geral" class="nav-link">Dashboard 1 — Panorama Geral</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#dados-utilizados" class="nav-link">Dados Utilizados</a>
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#componentes" class="nav-link">Componentes</a>
+            <li class="nav-item" data-bs-level="2"><a href="#dados-utilizados" class="nav-link">Dados Utilizados</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#dashboard-2-evolucao-temporal-must" class="nav-link">Dashboard 2 — Evolução Temporal (Must)</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#objetivo_1" class="nav-link">Objetivo</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#dados-utilizados_1" class="nav-link">Dados Utilizados</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#componentes_1" class="nav-link">Componentes</a>
+            <li class="nav-item" data-bs-level="2"><a href="#componentes" class="nav-link">Componentes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#dashboard-3-analise-politica-must" class="nav-link">Dashboard 3 — Análise Política (Must)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#dashboard-2-evolucao-temporal-must" class="nav-link">Dashboard 2 — Evolução Temporal (Must)</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#objetivo_2" class="nav-link">Objetivo</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#dados-utilizados_2" class="nav-link">Dados Utilizados</a>
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo_1" class="nav-link">Objetivo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#componentes_2" class="nav-link">Componentes</a>
+            <li class="nav-item" data-bs-level="2"><a href="#dados-utilizados_1" class="nav-link">Dados Utilizados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#componentes_1" class="nav-link">Componentes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#dashboard-3-analise-politica-must" class="nav-link">Dashboard 3 — Análise Política (Must)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo_2" class="nav-link">Objetivo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#dados-utilizados_2" class="nav-link">Dados Utilizados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#componentes_2" class="nav-link">Componentes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#consideracoes-tecnicas" class="nav-link">Considerações Técnicas</a>
+            <li class="nav-item" data-bs-level="1"><a href="#consideracoes-tecnicas" class="nav-link">Considerações Técnicas</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#conclusao" class="nav-link">Conclusão</a>
+            <li class="nav-item" data-bs-level="1"><a href="#conclusao" class="nav-link">Conclusão</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -190,7 +194,7 @@
 <p>Cada dashboard será sinalizado usando o método MoSCoW (Must, Should, Could, Wish), e:</p>
 <ul>
 <li>Must: deverá estar no projeto.</li>
-<li>Should: poderá estar no projeto, mas com menor prioridade.</li>
+<li>Should: estará no projeto, mas será dada menor prioridade.</li>
 <li>Could: se tivermos tempo, podemos aplicar.</li>
 <li>Wish: num mundo hipotético, usaríamos.</li>
 </ul>
@@ -227,7 +231,7 @@
 </tbody>
 </table>
 <p>Esses cinco dashboards cobrem praticamente todos os objetivos analíticos do sistema sem adicionar complexidade desnecessária.</p>
-<h1 id="dashboard-1-panorama-geral-must">Dashboard 1 — Panorama Geral (Must)</h1>
+<h1 id="dashboard-1-panorama-geral">Dashboard 1 — Panorama Geral</h1>
 <h2 id="objetivo">Objetivo</h2>
 <p>Apresentar uma visão rápida do cenário legislativo relacionado à segurança da criança na internet.</p>
 <p>Esse será o dashboard inicial do sistema.</p>
@@ -247,16 +251,15 @@
 <li><code>statusProposicao.descricaoSituacao</code></li>
 </ul>
 <h2 id="componentes">Componentes</h2>
-<h3 id="cards-informativos">Cards Informativos</h3>
-<h4 id="total-de-projetos">Total de Projetos</h4>
+<h3 id="total-de-projetos-must">Total de Projetos (Must)</h3>
 <p>Quantidade total de projetos armazenados.</p>
-<h4 id="projetos-em-tramitacao">Projetos em Tramitação</h4>
+<h3 id="projetos-em-tramitacao-must">Projetos em Tramitação (Must)</h3>
 <p>Projetos com situação ativa.</p>
-<h4 id="projetos-arquivados">Projetos Arquivados</h4>
+<h3 id="projetos-arquivados-should">Projetos Arquivados (Should)</h3>
 <p>Projetos encerrados ou arquivados.</p>
-<h4 id="projetos-aprovados">Projetos Aprovados</h4>
+<h3 id="projetos-aprovados-should">Projetos Aprovados (Should)</h3>
 <p>Projetos aprovados pela Câmara.</p>
-<h4 id="projetos-por-ano">Projetos por Ano</h4>
+<h3 id="projetos-por-ano-must">Projetos por Ano (Must)</h3>
 <p>Tipo:</p>
 <ul>
 <li>gráfico de linha.</li>
@@ -265,7 +268,7 @@
 <ul>
 <li>visualizar crescimento do tema ao longo do tempo.</li>
 </ul>
-<h4 id="distribuicao-por-status">Distribuição por Status</h4>
+<h3 id="distribuicao-por-status-should">Distribuição por Status (Should)</h3>
 <p>Tipo:</p>
 <ul>
 <li>gráfico donut.</li>
@@ -281,7 +284,7 @@
 <ul>
 <li>apresentar situação geral das proposições.</li>
 </ul>
-<h4 id="ultimos-projetos-adicionados">Últimos Projetos Adicionados</h4>
+<h3 id="ultimos-projetos-adicionados-should">Últimos Projetos Adicionados (Should)</h3>
 <p>Tipo:</p>
 <ul>
 <li>tabela.</li>
@@ -291,7 +294,6 @@
 <li>número;</li>
 <li>ano;</li>
 <li>ementa;</li>
-<li>autor;</li>
 <li>status;</li>
 <li>data de apresentação.</li>
 </ul>
@@ -313,7 +315,7 @@
 <li><code>ano</code></li>
 </ul>
 <h2 id="componentes_1">Componentes</h2>
-<h3 id="projetos-por-mes">Projetos por Mês</h3>
+<h3 id="projetos-por-mes-must">Projetos por Mês (Must)</h3>
 <p>Tipo:</p>
 <ul>
 <li>gráfico de linha temporal.</li>
@@ -322,7 +324,7 @@
 <ul>
 <li>detectar períodos de maior atividade legislativa.</li>
 </ul>
-<h3 id="crescimento-anual">Crescimento Anual</h3>
+<h3 id="crescimento-anual-should">Crescimento Anual (Should)</h3>
 <p>Tipo:</p>
 <ul>
 <li>gráfico de barras.</li>
@@ -331,7 +333,7 @@
 <ul>
 <li>comparar quantidade de projetos entre anos.</li>
 </ul>
-<h3 id="media-mensal-de-proposicoes">Média Mensal de Proposições</h3>
+<h3 id="media-mensal-de-proposicoes-could">Média Mensal de Proposições (Could)</h3>
 <p>Tipo:</p>
 <ul>
 <li>KPI numérico.</li>
@@ -340,7 +342,7 @@
 <ul>
 <li>medir frequência média de criação de projetos.</li>
 </ul>
-<h3 id="heatmap-de-atividade-legislativa">Heatmap de Atividade Legislativa</h3>
+<h3 id="heatmap-de-atividade-legislativa-could">Heatmap de Atividade Legislativa (Could)</h3>
 <p>Tipo:</p>
 <ul>
 <li>mapa de calor.</li>
@@ -356,17 +358,15 @@
 <p>Endpoints:</p>
 <ul>
 <li><code>/proposicoes</code></li>
-<li><code>/deputados</code></li>
 <li><code>/partidos</code></li>
 </ul>
 <p>Campos:</p>
 <ul>
-<li>autor;</li>
+<li>proposicao;</li>
 <li>partido;</li>
-<li>UF.</li>
 </ul>
 <h2 id="componentes_2">Componentes</h2>
-<h3 id="projetos-por-partido">Projetos por Partido</h3>
+<h3 id="projetos-por-partido-should">Projetos por Partido (Should)</h3>
 <p>Tipo:</p>
 <ul>
 <li>gráfico de barras horizontais.</li>
@@ -375,32 +375,7 @@
 <ul>
 <li>identificar protagonismo partidário.</li>
 </ul>
-<h3 id="projetos-por-estado">Projetos por Estado</h3>
-<p>Tipo:</p>
-<ul>
-<li>mapa do Brasil ou gráfico de barras.</li>
-</ul>
-<p>Objetivo:</p>
-<ul>
-<li>visualizar distribuição regional das propostas.</li>
-</ul>
-<h3 id="ranking-de-deputados">Ranking de Deputados</h3>
-<p>Tipo:</p>
-<ul>
-<li>tabela ordenada.</li>
-</ul>
-<p>Colunas:</p>
-<ul>
-<li>deputado;</li>
-<li>partido;</li>
-<li>UF;</li>
-<li>quantidade de projetos.</li>
-</ul>
-<p>Objetivo:</p>
-<ul>
-<li>identificar parlamentares mais ativos.</li>
-</ul>
-<h3 id="comparacao-partido-status">Comparação Partido × Status</h3>
+<h3 id="comparacao-partido-status-could">Comparação Partido × Status (Could)</h3>
 <p>Tipo:</p>
 <ul>
 <li>barras empilhadas.</li>
@@ -414,6 +389,7 @@
 <ul>
 <li>utilizar poucos dados;</li>
 <li>evitar processamento pesado;</li>
+<li>evitar relações muito complicadas;</li>
 <li>funcionar com baixo custo computacional;</li>
 <li>aproveitar diretamente os dados da API da Câmara;</li>
 <li>facilitar desenvolvimento acadêmico.</li>
@@ -437,8 +413,7 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -451,7 +426,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -471,7 +446,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">
